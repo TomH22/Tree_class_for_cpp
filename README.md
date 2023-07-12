@@ -45,11 +45,18 @@ git clone --recursive https://github.com/glfw/glfw.git
 ```
 git clone --recursive https://github.com/ocornut/imgui.git
 ```
-4. install Vulkan SDK (minimal installation is sufficient)
+4. install Vulkan SDK
 
-   https://vulkan.lunarg.com/sdk/home#windows
+   components:
 
-5. modify 2 lines in the [CMakeLists.txt](CMakeLists.txt) file to point to the locations of the "glfw" and "imgui" repositories. For example: 
+   - GLM headers
+   - SDL2 libraries and headers
+   - Volk header, source and library
+   - The Vulkan SDK Core (Always Installed)
+  
+   download link: https://vulkan.lunarg.com/sdk/home#windows
+
+6. modify 2 lines in the [CMakeLists.txt](CMakeLists.txt) file to point to the locations of the "glfw" and "imgui" repositories. For example: 
 ```
     # Set this to point to an up-to-date GLFW repo.
     set(GLFW_DIR "C:/Users/Tom/Documents/git/glfw")
