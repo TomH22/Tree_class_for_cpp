@@ -29,7 +29,7 @@ Watch the video demonstration:
 ## Usage
 **Building the project**
 
-If you just want to build the tests,  you can skip the steps 1, 2, 3, 4 and 5.
+If you just want to build the tests,  you can skip the steps 2-5.
 
 >This was tested on Windows 10 (07/2023).
 
@@ -56,7 +56,7 @@ git clone --recursive https://github.com/ocornut/imgui.git
   
    download link: https://vulkan.lunarg.com/sdk/home#windows
 
-6. modify 2 lines in the [CMakeLists.txt](CMakeLists.txt) file to point to the locations of the "glfw" and "imgui" repositories. For example: 
+5. modify 2 lines in the [CMakeLists.txt](CMakeLists.txt) file to point to the locations of the "glfw" and "imgui" repositories. For example: 
 ```
     # Set this to point to an up-to-date GLFW repo.
     set(GLFW_DIR "C:/Users/Tom/Documents/git/glfw")
