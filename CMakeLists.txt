@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.19.2)
-project(Tree-class-for-Cpp CXX)
+project(Tree_class_for_cpp CXX)
 
 if(${CMAKE_SOURCE_DIR} STREQUAL ${CMAKE_BINARY_DIR})
     message(FATAL_ERROR "In-source builds not allowed. Please make a new directory (called a build directory) and run CMake from there. You may need to remove CMakeCache.txt. ")
@@ -15,7 +15,7 @@ add_library(lib INTERFACE)
 target_include_directories(lib INTERFACE ${CMAKE_CURRENT_SOURCE_DIR}/lib)
 
 # Example glfw app just tested for windows!
-if(CMAKE_HOST_SYSTEM_NAME MATCHES "LINUX" AND NOT DEFINED ENV{DISPLAY})
+if(CMAKE_HOST_SYSTEM_NAME MATCHES "Linux" AND (NOT DEFINED ENV{DISPLAY} OR "$ENV{TERM}" STREQUAL "linux"))
     message(STATUS "No X Windows System on Linux.")
 else()
     # Set this to point to an up-to-date GLFW repo.
@@ -24,7 +24,7 @@ else()
     # Set this to point to an up-to-date imgui repo.
     set(IMGUI_DIR "${PROJECT_SOURCE_DIR}/../imgui")
 
-    find_package(Vulkan REQUIRED)
+    find_package(Vulkan)
 
     if(EXISTS ${GLFW_DIR} AND EXISTS ${IMGUI_DIR} AND ${Vulkan_FOUND})
         add_subdirectory(src bin)
@@ -41,4 +41,5 @@ else()
 
     endif()
 endif()
+
 add_subdirectory(test)
