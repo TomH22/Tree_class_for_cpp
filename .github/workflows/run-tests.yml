@@ -10,11 +10,7 @@ jobs:
     - uses: actions/checkout@v2    
     - name: Create build directory
       run: cmake -S . -B ../tree_build
-    - name: test
-      run: |
-        dir .
-        cd ..
-        dir .
-        cd tree_build
-        dir .
-        ctest
+    - name: Build
+      run: cmake --build ../tree_build
+    - name: Test
+      run: ctest --test-dir ../tree_build
