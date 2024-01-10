@@ -1,13 +1,15 @@
-name: run tests
-run-name: ${{ github.actor }} runs tests
-on: []
+name: GitHub Actions Google Unit Test
+on: [push]
 jobs:
-  run-unit_tests:
-    runs-on: windows
+  Explore-GitHub-Actions:
+    runs-on: windows-latest
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
-        with:
-          node-version: '14'
-      - run: npm install -g bats
-      - run: bats -v
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Set up CMake
+        uses: lukka/run-cmake@v1
+
+      - name: Configure CMake
+        run: cmake -S . -B ../../tree_build
+      - run: echo "🍏 This job's status is ${{ job.status }}."
