@@ -343,20 +343,20 @@ static void glfw_error_callback(int error, const char* description)
     fprintf(stderr, "Glfw Error %d: %s\n", error, description);
 }
 
-void outStaff(henn::TreeModel<Staff>::TreeItem treeItem)
+void outStaff(std::unique_ptr<henn::TreeModel<Staff>::TreeItem>& treeItem)
 {
-    if (treeItem.IsLeaveNode())
+    if (treeItem->IsLeaveNode())
     {
         ImGui::Text(" ");
         ImGui::SameLine();
-        ImGui::Text(treeItem.m_Item.GetNameAsSpChar().get());
+        ImGui::Text(treeItem->m_Item->GetNameAsSpChar().get());
     }
     else
     {
         ImGui::SetNextItemOpen(true, ImGuiCond_Once);
-        if (ImGui::TreeNode(treeItem.m_Item.GetNameAsSpChar().get()))
+        if (ImGui::TreeNode(treeItem->m_Item->GetNameAsSpChar().get()))
         {
-            for (auto& treeItem : treeItem.m_Children) {
+            for (auto& treeItem : treeItem->m_Children) {
                 {
                     outStaff(treeItem);
                 }

@@ -12,8 +12,8 @@ struct Staff {
 		STAFF_SERGANT = 3,
 	};
 private:
-	std::wstring name;
-	RANK rank;
+	std::wstring name = L"";
+	RANK rank = RANK::PRIVATE;
 public:
 	Staff() = default;
 	Staff(std::wstring _name, RANK _rank) : name(_name), rank(_rank) {};
@@ -26,6 +26,7 @@ public:
 	RANK GetRank() const { return rank; };
 	std::wstring GetRankLine();;
 };
+
 
 //////////////////////////////////////////////////////////////////////
 // Iterator for staff tree model.
@@ -77,6 +78,7 @@ private:
 	bool m_bSecondOutput = false;
 	Staff staffTmp;
 };
+
 
 //////////////////////////////////////////////////////////////////////
 // Iterator to output top item of tree model.

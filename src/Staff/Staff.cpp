@@ -123,6 +123,7 @@ bool StaffTopDownIterator::show(size_t lCurrent)
 	return true;
 }
 
+
 //////////////////////////////////////////////////////////////////
 // Constructor of class
 // @pram
