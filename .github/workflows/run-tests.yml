@@ -1,15 +1,16 @@
-name: GitHub Actions Google Unit Test
+name: CMake Build and Test
+
 on: [push]
+
 jobs:
-  Explore-GitHub-Actions:
+  build:
     runs-on: windows-latest
+
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v2
-
-      - name: Set up CMake
-        uses: lukka/run-cmake@v1
-
-      - name: Configure CMake
-        run: cmake -S . -B ../../tree_build
-      - run: echo "🍏 This job's status is ${{ job.status }}."
+    - uses: actions/checkout@v2    
+    - name: Create build directory
+      run: cmake -S . -B ../tree_build
+    - name: Build
+      run: cmake --build ../tree_build
+    - name: Test
+      run: ctest --test-dir ../tree_build
