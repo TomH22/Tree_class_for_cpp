@@ -274,14 +274,6 @@ TEST_F(TreeTestSuite, TestJsonSerialization1) {
 	EXPECT_FALSE(treeModel != alsoTreeModel);
 }
 
-#include <filesystem>
-#include <chrono>
-#include <locale>
-#include <codecvt>
-#include <fstream>
-
-using namespace std::filesystem;
-
 TEST_F(TreeTestSuite, NegativeTestJsonSerialization1) {
 	Staff loos(L"Loos", Staff::RANK::STAFF_SERGANT);
 	Staff quaas(L"Quaas", Staff::RANK::SERGANT);
@@ -319,13 +311,4 @@ TEST_F(TreeTestSuite, NegativeTestJsonSerialization1) {
 	TreeModel<Staff> alsoTreeModel(j);
 	EXPECT_FALSE(notAlsotreeModel == alsoTreeModel);
 	EXPECT_TRUE(notAlsotreeModel != alsoTreeModel);
-
-
-	//path pCRoot = L"C:/Users/TomHennersdorf/Downloads/asdf.json";
-
-	ofstream fFranchname;
-	std::string dump = j.dump();
-	fFranchname.open("C:/Users/TomHennersdorf/Downloads/asdf.json", std::ofstream::out | std::ofstream::trunc);
-	fFranchname << dump;
-	fFranchname.close();
 }
