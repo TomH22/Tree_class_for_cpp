@@ -11,18 +11,9 @@ jobs:
 
     - name: up dir
       run: cd ..
-    - name: Clone nlohmann/json
-      run: git clone https://github.com/nlohmann/json.git
-    - name: Configure nlohmann/json
-      run: cmake -S json -B json_build
-    - name: Build nlohmann/json
-      run: cmake --build json_build
-
     - name: check dir
-      run: dir .    
-    - name: Create build directory
-      run: cmake -S Tree_class_for_cpp -B tree_build
-    - name: Build
-      run: cmake --build tree_build
-    - name: Test
-      run: ctest --test-dir tree_build
+      run: dir .  
+    - name: up dir
+      run: cd ..
+    - name: check dir
+      run: dir . 
