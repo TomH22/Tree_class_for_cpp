@@ -1,5 +1,7 @@
+﻿#include "Staff.h"
+
 #include <gtest/gtest.h>
-#include "Staff.h"
+
 #include <string>
 #include <memory>
 
@@ -238,4 +240,92 @@ TEST_F(TreeTestSuite, NegativeTestIsNull) {
 	TreeModel<Staff> treeModel(loos);
 	EXPECT_NE(true, treeModel.IsNull());
 	EXPECT_NE(0, treeModel.Size());
+}
+
+TEST_F(TreeTestSuite, TestJsonSerializationGerman) {
+	Staff muller(L"Müller", Staff::RANK::CORPORAL);
+	json j = static_cast<json>(muller);
+	Staff alsoMuller = j.get<Staff>();
+	EXPECT_TRUE(muller == alsoMuller);
+}
+
+TEST_F(TreeTestSuite, TestJsonSerialization1) {
+	Staff loos(L"Loos", Staff::RANK::STAFF_SERGANT);
+	Staff quaas(L"Quaas", Staff::RANK::SERGANT);
+	Staff cox(L"Cox", Staff::RANK::SERGANT);
+	Staff muller(L"Muller", Staff::RANK::CORPORAL);
+	Staff lugk(L"Lugk", Staff::RANK::CORPORAL);
+
+	TreeModel<Staff> treeModel(loos);
+	treeModel.Append(quaas, loos);
+	treeModel.Append(cox, loos);
+	treeModel.Append(Staff(L"Brown", Staff::RANK::SERGANT), loos);
+
+	treeModel.Append(Staff(L"Epheser", Staff::RANK::CORPORAL), cox);
+	treeModel.Append(Staff(L"Haupt", Staff::RANK::CORPORAL), cox);
+
+	treeModel.Append(lugk, quaas);
+	treeModel.Append(muller, quaas);
+
+	json j = treeModel.GetJson();
+
+	TreeModel<Staff> alsoTreeModel(j);
+	EXPECT_TRUE(treeModel == alsoTreeModel);
+	EXPECT_FALSE(treeModel != alsoTreeModel);
+}
+
+#include <filesystem>
+#include <chrono>
+#include <locale>
+#include <codecvt>
+#include <fstream>
+
+using namespace std::filesystem;
+
+TEST_F(TreeTestSuite, NegativeTestJsonSerialization1) {
+	Staff loos(L"Loos", Staff::RANK::STAFF_SERGANT);
+	Staff quaas(L"Quaas", Staff::RANK::SERGANT);
+	Staff cox(L"Cox", Staff::RANK::SERGANT);
+	Staff muller(L"Muller", Staff::RANK::CORPORAL);
+	Staff lugk(L"Lugk", Staff::RANK::CORPORAL);
+
+	TreeModel<Staff> treeModel(loos);
+	{
+		treeModel.Append(quaas, loos);
+		treeModel.Append(cox, loos);
+		treeModel.Append(Staff(L"Brown", Staff::RANK::SERGANT), loos);
+
+		treeModel.Append(Staff(L"Epheser", Staff::RANK::CORPORAL), cox);
+		treeModel.Append(Staff(L"Haupt", Staff::RANK::CORPORAL), cox);
+
+		treeModel.Append(lugk, quaas);
+		treeModel.Append(muller, quaas);
+	}
+
+	TreeModel<Staff> notAlsotreeModel(loos);
+	{
+		notAlsotreeModel.Append(quaas, loos);
+		notAlsotreeModel.Append(cox, loos);
+		notAlsotreeModel.Append(Staff(L"Lange", Staff::RANK::SERGANT), loos);
+
+		notAlsotreeModel.Append(Staff(L"Epheser", Staff::RANK::CORPORAL), cox);
+		notAlsotreeModel.Append(Staff(L"Haupt", Staff::RANK::CORPORAL), cox);
+
+		notAlsotreeModel.Append(lugk, quaas);
+		notAlsotreeModel.Append(muller, quaas);
+	}
+
+	json j = treeModel.GetJson();
+	TreeModel<Staff> alsoTreeModel(j);
+	EXPECT_FALSE(notAlsotreeModel == alsoTreeModel);
+	EXPECT_TRUE(notAlsotreeModel != alsoTreeModel);
+
+
+	//path pCRoot = L"C:/Users/TomHennersdorf/Downloads/asdf.json";
+
+	ofstream fFranchname;
+	std::string dump = j.dump();
+	fFranchname.open("C:/Users/TomHennersdorf/Downloads/asdf.json", std::ofstream::out | std::ofstream::trunc);
+	fFranchname << dump;
+	fFranchname.close();
 }

@@ -15,4 +15,3 @@ target_link_libraries(unit_tests PRIVATE lib gtest_main)
 target_include_directories(unit_tests PRIVATE ${PROJECT_SOURCE_DIR}/src/Staff)
 include(GoogleTest)
 gtest_discover_tests(unit_tests)
-

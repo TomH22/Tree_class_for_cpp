@@ -1,8 +1,16 @@
 #include "Staff.h"
 #include <algorithm>
+#include <locale> // for std::codecvt_utf8
+#include <codecvt> // for std::wstring_convert
 
 using namespace henn;
 using namespace std;
+
+Staff::Staff(std::string _name, RANK _rank) : rank(_rank)
+{
+	std::wstring_convert<std::codecvt_utf8_utf16<wchar_t>> converter;// this is just from chatGPT and works
+	name = converter.from_bytes(_name);
+}
 
 bool Staff::operator==(const Staff other) const
 {
@@ -21,6 +29,11 @@ bool Staff::operator<(const Staff& other) const
 
 	return (aLowLetter < bLowLetter);
 };
+
+std::string Staff::GetNameAsString() const 
+{
+	return std::wstring_convert<std::codecvt_utf8<wchar_t>>().to_bytes(name);
+}
 
 std::shared_ptr<char> Staff::GetNameAsSpChar() const
 {

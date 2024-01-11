@@ -1,9 +1,14 @@
 #pragma once
+
+#include "nlohmann/json.hpp"
+
 #include <algorithm>
 #include <stdexcept>
 #include <vector>
 #include <exception>
 #include <memory>
+
+using json = nlohmann::json;
 
 /**
 @file Tree.h
@@ -25,7 +30,32 @@ public:
 		std::unique_ptr<Item> m_Item;
 		std::vector<std::unique_ptr<TreeItem>> m_Children;
 		bool IsLeaveNode() { return m_Children.size() == 0; };
-		bool operator<(const TreeItem& other) const { return (*this->m_Item < *other.m_Item); };
+		bool operator<(const TreeItem &other) const { return (*this->m_Item < *other.m_Item); };
+		bool operator==(const TreeItem &other) const
+		{
+			// First, compare the items themselves
+			if (!(*m_Item == *other.m_Item))
+				return false;
+
+			// Then compare the number of children
+			if (m_Children.size() != other.m_Children.size())
+				return false;
+
+			// Finally, compare each child
+			for (size_t i = 0; i < m_Children.size(); ++i)
+			{
+				if (!(*m_Children[i] == *other.m_Children[i]))
+					return false;
+			}
+
+			// Items and all children are equal
+			return true;
+		};
+
+		bool operator!=(const TreeItem& other) const
+		{
+			return !(*this == other);
+		}
 	};
 public:
 	TreeModel() = default;
@@ -39,6 +69,15 @@ public:
 			copyRecursive(m_treeItem, other.m_treeItem);
 		}
 	}
+
+	TreeModel(const json& j)
+	{
+		if (!j.is_null() && j.contains("item"))
+		{
+			m_treeItem = std::make_unique<TreeItem>();
+			from_json_recursive(m_treeItem, j);
+		}
+	};
 
 	// Copy Assignment Constructor
 	TreeModel& operator=(const TreeModel& other)
@@ -56,7 +95,17 @@ public:
 			}
 		}
 		return *this;
-	}
+	};
+
+	bool operator==(const TreeModel& other)
+	{
+		return *m_treeItem == *other.m_treeItem;
+	};
+
+	bool operator!=(const TreeModel& other)
+	{
+		return !(*this == other);
+	};
 
 	/**
 	Create the tree model.
@@ -90,6 +139,7 @@ public:
 			return true;
 		return false;
 	};
+	json GetJson() const;
 private:
 	bool addRecursive(std::unique_ptr<TreeItem>&, Item, Item);
 	bool getRecursive(std::unique_ptr<TreeItem>&, Item&, const size_t, size_t&);
@@ -106,6 +156,27 @@ private:
 				auto newChild = std::make_unique<TreeItem>();
 				copyRecursive(newChild, child);
 				dest->m_Children.push_back(std::move(newChild));
+			}
+		}
+	};
+
+	void from_json_recursive(std::unique_ptr<TreeItem>& treeItem, const json& j)
+	{
+		if (!j.is_null() && j.contains("item"))
+		{
+			// Deserialize the item
+			Item item = j["item"].get<Item>();
+			treeItem->m_Item = std::make_unique<Item>(std::move(item));
+
+			// Deserialize the children if they exist
+			if (j.contains("children"))
+			{
+				for (const auto& child_json : j["children"])
+				{
+					auto childTreeItem = std::make_unique<TreeItem>();
+					from_json_recursive(childTreeItem, child_json);
+					treeItem->m_Children.push_back(std::move(childTreeItem));
+				}
 			}
 		}
 	};
@@ -286,6 +357,43 @@ bool TreeModel<Item>::getRecursive(std::unique_ptr<TreeItem> &_treeItem, Item &_
 
 	return false;
 };
+
+template<typename Item>
+json TreeModel<Item>::GetJson() const
+{
+	// Helper lambda function to recursively convert TreeItems to JSON
+	std::function<json(const std::unique_ptr<TreeItem>&)> treeItemToJson = [&](const std::unique_ptr<TreeItem>& treeItem) -> json
+	{
+		if (!treeItem || !treeItem->m_Item)
+		{
+			// If the TreeItem or its Item is null, return a null JSON object
+			return json{};
+		}
+
+		json itemJson;
+		itemJson["item"] = *treeItem->m_Item;// Assuming that the Item type can be serialized to JSON
+
+		if (!treeItem->IsLeaveNode())
+		{
+			for (const auto& child : treeItem->m_Children)
+			{
+				itemJson["children"].push_back(treeItemToJson(child));
+			}
+		}
+
+		return itemJson;
+	};
+
+	// Assuming that the tree model itself is not null, serialize the root item and its descendants
+	if (!IsNull())
+	{
+		return treeItemToJson(m_treeItem);
+	}
+
+	// If the tree model is null, return an empty JSON object
+	return json{};
+}
+
 #pragma endregion
 #pragma region Iterators
 /**

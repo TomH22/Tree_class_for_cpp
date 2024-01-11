@@ -1,6 +1,8 @@
 cmake_minimum_required(VERSION 3.19.2)
 project(Tree_class_for_cpp CXX)
 
+find_package(nlohmann_json 3.2.0 REQUIRED)
+
 if(${CMAKE_SOURCE_DIR} STREQUAL ${CMAKE_BINARY_DIR})
     message(FATAL_ERROR "In-source builds not allowed. Please make a new directory (called a build directory) and run CMake from there. You may need to remove CMakeCache.txt. ")
   endif()
@@ -12,7 +14,9 @@ set(CMAKE_INSTALL_PREFIX "C:/Program Files/${PROJECT_NAME}" CACHE PATH "CMAKE_IN
 enable_testing()
 
 add_library(lib INTERFACE)
+
 target_include_directories(lib INTERFACE ${CMAKE_CURRENT_SOURCE_DIR}/lib)
+target_include_directories(lib INTERFACE $<TARGET_PROPERTY:nlohmann_json::nlohmann_json,INTERFACE_INCLUDE_DIRECTORIES>)
 
 # Example glfw app just tested for windows!
 if(CMAKE_HOST_SYSTEM_NAME MATCHES "Linux" AND (NOT DEFINED ENV{DISPLAY} OR "$ENV{TERM}" STREQUAL "linux"))

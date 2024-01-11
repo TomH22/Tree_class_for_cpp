@@ -1,10 +1,11 @@
 #pragma once
 #include "Tree.h"
+
 #include <memory>
 #include <string>
 
 struct Staff {
-	enum class RANK
+	enum class RANK : int
 	{
 		PRIVATE = 0,
 		CORPORAL = 1,
@@ -17,15 +18,51 @@ private:
 public:
 	Staff() = default;
 	Staff(std::wstring _name, RANK _rank) : name(_name), rank(_rank) {};
+	Staff(std::string _name, RANK _rank);
 	bool operator==(const Staff other) const;
 	bool operator!=(const Staff other) const { return !(*this == other); };
 	bool operator<(const Staff& other) const;
 	bool operator>=(const Staff& other) const { return !(*this < other); }
 	std::wstring GetName() const { return name; };
+	std::string GetNameAsString() const;
 	std::shared_ptr<char> GetNameAsSpChar() const;
 	RANK GetRank() const { return rank; };
-	std::wstring GetRankLine();;
+	std::wstring GetRankLine();
+	bool IsNull() const { return name.empty(); };
 };
+
+//namespace missing ...
+
+template <typename BasicJsonType>
+static void to_json(BasicJsonType& j, const Staff& staff)
+{
+	if (staff.IsNull())
+		j = json{};
+	else
+		j = json{
+			{
+			"staff",
+			{
+				{"name", staff.GetNameAsString()},
+				{"rank", static_cast<int>(staff.GetRank())}
+			}
+			}
+	};
+}
+
+template<typename BasicJsonType>
+static void from_json(const BasicJsonType& j, Staff& staff)
+{
+	if (j.is_null() || j.find("staff") == j.end())
+	{
+		// nothing
+	}
+	else
+	{
+		auto obj = j["staff"];
+		staff = Staff(obj["name"].get<std::string>(), static_cast<Staff::RANK>(obj["rank"].get<int>()));
+	}
+}
 
 
 //////////////////////////////////////////////////////////////////////
