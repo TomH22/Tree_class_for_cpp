@@ -7,7 +7,15 @@ jobs:
     runs-on: windows-latest
 
     steps:
-    - uses: actions/checkout@v2    
+    - uses: actions/checkout@v2 
+
+    - name: Clone nlohmann/json
+      run: git clone https://github.com/nlohmann/json.git ../json
+    - name: Configure nlohmann/json
+      run: cmake -S ../json -B ../json_build
+    - name: Build nlohmann/json
+      run: cmake --build ../json_build
+      
     - name: Create build directory
       run: cmake -S . -B ../tree_build
     - name: Build
