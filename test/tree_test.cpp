@@ -312,3 +312,97 @@ TEST_F(TreeTestSuite, NegativeTestJsonSerialization1) {
 	EXPECT_FALSE(notAlsotreeModel == alsoTreeModel);
 	EXPECT_TRUE(notAlsotreeModel != alsoTreeModel);
 }
+
+TEST_F(TreeTestSuite, TestGetFromStructure) {
+	Staff loos(L"Loos", Staff::RANK::STAFF_SERGANT);
+	Staff quaas(L"Quaas", Staff::RANK::SERGANT);
+	Staff cox(L"Cox", Staff::RANK::SERGANT);
+	Staff muller(L"Muller", Staff::RANK::CORPORAL);
+	Staff lugk(L"Lugk", Staff::RANK::CORPORAL);
+
+	TreeModel<Staff> treeModel(loos);
+	treeModel.Append(quaas, loos);
+	treeModel.Append(cox, loos);
+	treeModel.Append(Staff(L"Brown", Staff::RANK::SERGANT), loos);
+
+	treeModel.Append(Staff(L"Epheser", Staff::RANK::CORPORAL), cox);
+	treeModel.Append(Staff(L"Haupt", Staff::RANK::CORPORAL), cox);
+
+	treeModel.Append(lugk, quaas);
+	treeModel.Append(muller, quaas);
+
+	Staff schmidt(L"Schmidt", Staff::RANK::PRIVATE);
+	treeModel.Append(Staff(L"Titze", Staff::RANK::PRIVATE), muller);
+	treeModel.Append(Staff(L"Uhlig", Staff::RANK::PRIVATE), muller);
+	treeModel.Append(Staff(L"Ebert", Staff::RANK::PRIVATE), muller);
+	treeModel.Append(Staff(L"Hartmann", Staff::RANK::PRIVATE), muller);
+	treeModel.Append(schmidt, muller);
+
+	std::vector structure{ loos, quaas};
+	auto& alsoQuaas = treeModel.Get(structure);
+	EXPECT_EQ(*alsoQuaas, quaas);
+
+	std::vector structure2{ loos, quaas, muller, schmidt };
+	auto& alsoSchmidt = treeModel.Get(structure2);
+	EXPECT_EQ(*alsoSchmidt, schmidt);
+}
+
+
+TEST_F(TreeTestSuite, TestGetFromStructureNotFound) {
+	Staff loos(L"Loos", Staff::RANK::STAFF_SERGANT);
+	Staff muller(L"Muller", Staff::RANK::CORPORAL);
+	Staff lugk(L"Lugk", Staff::RANK::CORPORAL);
+
+	TreeModel<Staff> treeModel(loos);
+	treeModel.Append(Staff(L"Brown", Staff::RANK::SERGANT), loos);
+
+	treeModel.Append(muller, loos);
+
+	Staff titze(L"Titze", Staff::RANK::PRIVATE);
+	treeModel.Append(titze, muller);
+	treeModel.Append(Staff(L"Uhlig", Staff::RANK::PRIVATE), muller);
+	treeModel.Append(Staff(L"Ebert", Staff::RANK::PRIVATE), muller);
+	treeModel.Append(Staff(L"Hartmann", Staff::RANK::PRIVATE), muller);
+
+	Staff empty{};
+	Staff quaas(L"Quaas", Staff::RANK::SERGANT);
+	std::vector structure{ loos, quaas };
+	auto& alsoEmpty = treeModel.Get(structure);
+	EXPECT_EQ(*alsoEmpty, empty);
+	EXPECT_NE(*alsoEmpty, quaas);
+
+	Staff schmidt(L"Schmidt", Staff::RANK::PRIVATE);
+	std::vector structure2{ loos, muller, schmidt };
+	auto& alsoEmpty2 = treeModel.Get(structure2);
+	EXPECT_EQ(empty, *alsoEmpty2);
+	EXPECT_NE(schmidt, *alsoEmpty2);
+
+	std::vector structure3{ loos, loos };
+	auto& alsoEmpty3 = treeModel.Get(structure3);
+	EXPECT_EQ(empty, *alsoEmpty3);
+
+	std::vector structure4{ loos, titze };
+	auto& alsoEmpty4 = treeModel.Get(structure4);
+	EXPECT_EQ(empty, *alsoEmpty4);
+}
+
+TEST_F(TreeTestSuite, TestGetFromStructureAndChange) {
+	Staff loos(L"Loos", Staff::RANK::STAFF_SERGANT);
+	Staff quaas(L"Quaas", Staff::RANK::SERGANT);
+
+	TreeModel<Staff> treeModel(loos);
+	treeModel.Append(quaas, loos);
+
+	Staff quasBase(L"Quaas", Staff::RANK::PRIVATE);
+	std::vector structure{ loos, quasBase };
+	auto& alsoQuaas = treeModel.Get(structure);
+	EXPECT_EQ(*alsoQuaas, quaas);
+	EXPECT_EQ(alsoQuaas->GetRank(), Staff::RANK::SERGANT);
+	alsoQuaas->SetRank(Staff::RANK::CORPORAL);
+
+	
+	std::vector structure2{ loos, quasBase };
+	auto& alsoQuaasSecondGet = treeModel.Get(structure2);
+	EXPECT_EQ(*alsoQuaasSecondGet, quaas);
+	EXPECT_EQ(alsoQuaasSecondGet->GetRank(), Staff::RANK::CORPORAL);
+}

@@ -14,7 +14,7 @@ Staff::Staff(std::string _name, RANK _rank) : rank(_rank)
 
 bool Staff::operator==(const Staff other) const
 {
-	if(name == other.GetName() && rank == other.GetRank())
+	if(name == other.GetName()/* && rank == other.GetRank()*/)
 		return true;
 	return false;
 };
@@ -65,6 +65,11 @@ std::wstring Staff::GetRankLine()
 	}
 
 	return L"";
+}
+
+void Staff::SetRank(RANK _rank)
+{
+	rank = _rank;
 }
 
 StaffTopDownIterator::StaffTopDownIterator(henn::TreeModel<Staff> treeModel, bool _bOrderAlphabetical, bool _bShowStaffSergants,

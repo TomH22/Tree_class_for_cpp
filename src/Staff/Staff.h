@@ -28,6 +28,7 @@ public:
 	std::shared_ptr<char> GetNameAsSpChar() const;
 	RANK GetRank() const { return rank; };
 	std::wstring GetRankLine();
+	void SetRank(RANK);
 	bool IsNull() const { return name.empty(); };
 };
 

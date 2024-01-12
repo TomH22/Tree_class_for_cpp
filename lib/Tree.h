@@ -51,17 +51,86 @@ public:
 			// Items and all children are equal
 			return true;
 		};
-
 		bool operator!=(const TreeItem& other) const
 		{
 			return !(*this == other);
 		}
 	};
 public:
-	TreeModel() = default;
+	TreeModel() { m_nullItemPtr = std::make_unique<Item>(); };
 	~TreeModel() = default;
-	TreeModel(const TreeModel& other)
+	TreeModel(const TreeModel& other);
+	TreeModel(const json& j);
+	TreeModel(Item _item);
+	TreeModel& operator=(const TreeModel& other);
+	bool operator==(const TreeModel& other) { return *m_treeItem == *other.m_treeItem; };
+	bool operator!=(const TreeModel& other) { return !(*this == other); };
+	bool Append(Item, Item);
+	Item Get(const size_t);
+	std::unique_ptr<Item>& Get(std::vector<Item> structure);
+	std::unique_ptr<TreeItem>& GetTreeItem() { return m_treeItem; };
+	size_t Size() const;
+	void SortSecondColumn();
+	void SortAllColumns();
+	void Clear() { m_treeItem.reset(); };
+	bool IsNull() const;
+	json GetJson() const;
+private:
+	bool addRecursive(std::unique_ptr<TreeItem>&, Item, Item);
+	bool getRecursive(std::unique_ptr<TreeItem>&, Item&, const size_t, size_t&);
+	size_t sizeRecursive(const std::unique_ptr<TreeItem>&) const;
+	void sortColumnsRecursive(std::unique_ptr<TreeItem>&);
+	void copyRecursive(std::unique_ptr<TreeItem>& dest, const std::unique_ptr<TreeItem>& src);
+	void from_json_recursive(std::unique_ptr<TreeItem>& treeItem, const json& j);
+private:
+	std::unique_ptr<TreeItem> m_treeItem;
+	std::unique_ptr<Item> m_nullItemPtr;
+};
+
+template<typename Item>
+TreeModel<Item>::TreeModel(const TreeModel& other)
+{
+	m_nullItemPtr = std::make_unique<Item>();
+
+	// Perform a deep copy of the tree
+	if (other.m_treeItem)
 	{
+		m_treeItem = std::make_unique<TreeItem>();
+		copyRecursive(m_treeItem, other.m_treeItem);
+	}
+}
+
+template<typename Item>
+TreeModel<Item>::TreeModel(const json& j)
+{
+	m_nullItemPtr = std::make_unique<Item>();
+
+	if (!j.is_null() && j.contains("item"))
+	{
+		m_treeItem = std::make_unique<TreeItem>();
+		from_json_recursive(m_treeItem, j);
+	}
+};
+
+template<typename Item>
+TreeModel<Item>::TreeModel(Item _item)
+{
+	m_nullItemPtr = std::make_unique<Item>();
+
+	m_treeItem = std::make_unique<TreeItem>();
+	m_treeItem->m_Item = std::make_unique<Item>(_item);
+}
+
+template<typename Item>
+typename TreeModel<Item>::TreeModel& TreeModel<Item>::operator=(const TreeModel& other)
+{
+	if (this != &other)
+	{
+		// Release existing resources
+		m_treeItem.reset();
+
+		m_nullItemPtr = std::make_unique<Item>();
+
 		// Perform a deep copy of the tree
 		if (other.m_treeItem)
 		{
@@ -69,120 +138,54 @@ public:
 			copyRecursive(m_treeItem, other.m_treeItem);
 		}
 	}
+	return *this;
+}
 
-	TreeModel(const json& j)
+template<typename Item>
+typename bool TreeModel<Item>::IsNull() const
+{
+	if (!m_treeItem || !m_treeItem->m_Item)
+		return true;
+	return false;
+}
+
+template<typename Item>
+void TreeModel<Item>::copyRecursive(std::unique_ptr<TreeItem>& dest, const std::unique_ptr<TreeItem>& src)
+{
+	if (src)
 	{
-		if (!j.is_null() && j.contains("item"))
+		dest->m_Item = std::make_unique<Item>(*src->m_Item);
+
+		for (const auto& child : src->m_Children)
 		{
-			m_treeItem = std::make_unique<TreeItem>();
-			from_json_recursive(m_treeItem, j);
+			auto newChild = std::make_unique<TreeItem>();
+			copyRecursive(newChild, child);
+			dest->m_Children.push_back(std::move(newChild));
 		}
-	};
+	}
+}
 
-	// Copy Assignment Constructor
-	TreeModel& operator=(const TreeModel& other)
+template<typename Item>
+void TreeModel<Item>::from_json_recursive(std::unique_ptr<TreeItem>& treeItem, const json& j)
+{
+	if (!j.is_null() && j.contains("item"))
 	{
-		if (this != &other)
-		{
-			// Release existing resources
-			m_treeItem.reset();
+		// Deserialize the item
+		Item item = j["item"].get<Item>();
+		treeItem->m_Item = std::make_unique<Item>(std::move(item));
 
-			// Perform a deep copy of the tree
-			if (other.m_treeItem)
+		// Deserialize the children if they exist
+		if (j.contains("children"))
+		{
+			for (const auto& child_json : j["children"])
 			{
-				m_treeItem = std::make_unique<TreeItem>();
-				copyRecursive(m_treeItem, other.m_treeItem);
+				auto childTreeItem = std::make_unique<TreeItem>();
+				from_json_recursive(childTreeItem, child_json);
+				treeItem->m_Children.push_back(std::move(childTreeItem));
 			}
 		}
-		return *this;
-	};
-
-	bool operator==(const TreeModel& other)
-	{
-		return *m_treeItem == *other.m_treeItem;
-	};
-
-	bool operator!=(const TreeModel& other)
-	{
-		return !(*this == other);
-	};
-
-	/**
-	Create the tree model.
-	@param _item	root item
-	*/
-	TreeModel(Item _item)
-	{
-		m_treeItem = std::make_unique<TreeItem>();
-		m_treeItem->m_Item = std::make_unique<Item>(_item);
-	};
-	bool Append(Item, Item);
-	Item Get(const size_t);
-	std::unique_ptr<TreeItem>& GetTreeItem()
-	{
-		return m_treeItem;
-	};
-
-	size_t Size() const;
-	/**
-	Sort second column from small to big.
-	*/
-	void SortSecondColumn();
-	void SortAllColumns();
-	void Clear()
-	{
-		m_treeItem.reset();
-	};
-	bool IsNull() const
-	{
-		if (!m_treeItem || !m_treeItem->m_Item)
-			return true;
-		return false;
-	};
-	json GetJson() const;
-private:
-	bool addRecursive(std::unique_ptr<TreeItem>&, Item, Item);
-	bool getRecursive(std::unique_ptr<TreeItem>&, Item&, const size_t, size_t&);
-	size_t sizeRecursive(const std::unique_ptr<TreeItem>&) const;
-	void sortColumnsRecursive(std::unique_ptr<TreeItem>&);
-	void copyRecursive(std::unique_ptr<TreeItem>& dest, const std::unique_ptr<TreeItem>& src)
-	{
-		if (src)
-		{
-			dest->m_Item = std::make_unique<Item>(*src->m_Item);
-
-			for (const auto& child : src->m_Children)
-			{
-				auto newChild = std::make_unique<TreeItem>();
-				copyRecursive(newChild, child);
-				dest->m_Children.push_back(std::move(newChild));
-			}
-		}
-	};
-
-	void from_json_recursive(std::unique_ptr<TreeItem>& treeItem, const json& j)
-	{
-		if (!j.is_null() && j.contains("item"))
-		{
-			// Deserialize the item
-			Item item = j["item"].get<Item>();
-			treeItem->m_Item = std::make_unique<Item>(std::move(item));
-
-			// Deserialize the children if they exist
-			if (j.contains("children"))
-			{
-				for (const auto& child_json : j["children"])
-				{
-					auto childTreeItem = std::make_unique<TreeItem>();
-					from_json_recursive(childTreeItem, child_json);
-					treeItem->m_Children.push_back(std::move(childTreeItem));
-				}
-			}
-		}
-	};
-private:
-	std::unique_ptr<TreeItem> m_treeItem;
-};
+	}
+}
 
 /**
 @brief Appends a new item to the tree.
@@ -252,6 +255,9 @@ Item TreeModel<Item>::Get(const size_t _index)
 	return result;
 }
 
+/**
+Sort second column from small to big.
+*/
 template<class Item>
 void TreeModel<Item>::SortSecondColumn()
 {
@@ -394,6 +400,35 @@ json TreeModel<Item>::GetJson() const
 	return json{};
 }
 
+template<typename Item>
+std::unique_ptr<Item>& TreeModel<Item>::Get(std::vector<Item> structure)
+{
+	if (!m_treeItem || !m_treeItem->m_Item || structure.size() < 1 || *m_treeItem->m_Item != structure[0])
+	{
+		return m_nullItemPtr;
+	}
+
+	auto currentNode = m_treeItem.get();
+
+	// Traverse the tree based on the structure vector
+	for (size_t i = 1; i < structure.size(); ++i)
+	{
+		// Find the child with the current structure item
+		auto it = std::find_if(currentNode->m_Children.begin(), currentNode->m_Children.end(),
+			[&structure, i](const auto& child) { return child->m_Item && *(child->m_Item) == structure[i]; });
+
+		if (it == currentNode->m_Children.end())
+		{
+			return m_nullItemPtr;
+		}
+
+		// Move to the next level in the tree
+		currentNode = it->get();
+	}
+
+	// Return the found item
+	return currentNode->m_Item;
+};
 #pragma endregion
 #pragma region Iterators
 /**
