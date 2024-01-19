@@ -13,7 +13,7 @@ jobs:
         submodules: recursive  # This line ensures submodules are fetched
     - name: Create build directory
       run: cmake -S . -B ../tree_build
-#    - name: Build
-#      run: cmake --build ../tree_build
-#    - name: Test
-#      run: ctest --test-dir ../tree_build
+    - name: Build
+      run: cmake --build ../tree_build
+    - name: Test
+      run: ctest --test-dir ../tree_build
