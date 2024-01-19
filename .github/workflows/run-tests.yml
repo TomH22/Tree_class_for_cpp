@@ -7,15 +7,10 @@ jobs:
     runs-on: windows-latest
 
     steps:
-    - uses: actions/checkout@v2 
-#
-#    - name: Clone nlohmann/json
-#      run: git clone https://github.com/nlohmann/json.git ../json
-#    - name: Configure nlohmann/json
-#      run: cmake -S ../json -B ../json_build
-#    - name: Build nlohmann/json
-#      run: cmake --build ../json_build
-# 
+    - name: Checkout repository with submodules
+      uses: actions/checkout@v2
+      with:
+        submodules: recursive  # This line ensures submodules are fetched
     - name: Create build directory
       run: cmake -S . -B ../tree_build
 #    - name: Build
