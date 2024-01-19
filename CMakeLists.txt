@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.19.2)
 project(Tree_class_for_cpp CXX)
 
-find_package(nlohmann_json 3 REQUIRED)
+add_subdirectory(extern/json)
 
 if(${CMAKE_SOURCE_DIR} STREQUAL ${CMAKE_BINARY_DIR})
     message(FATAL_ERROR "In-source builds not allowed. Please make a new directory (called a build directory) and run CMake from there. You may need to remove CMakeCache.txt. ")
