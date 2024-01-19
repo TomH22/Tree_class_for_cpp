@@ -66,6 +66,39 @@ TEST_F(TreeTestSuite, AddStaffData) {
 	EXPECT_EQ(18, treeModel.Size());
 }
 
+TEST_F(TreeTestSuite, AddTestSizeLeaveNodes) {
+	Staff loos(L"Loos", Staff::RANK::STAFF_SERGANT);
+	Staff quaas(L"Quaas", Staff::RANK::SERGANT);
+	Staff cox(L"Cox", Staff::RANK::SERGANT);
+	Staff muller(L"Muller", Staff::RANK::CORPORAL);
+	Staff lugk(L"Lugk", Staff::RANK::CORPORAL);
+
+
+	TreeModel<Staff> treeModel(loos);
+	treeModel.Append(quaas, loos);
+	treeModel.Append(cox, loos);
+	treeModel.Append(Staff(L"Brown", Staff::RANK::SERGANT), loos);
+
+	treeModel.Append(Staff(L"Epheser", Staff::RANK::CORPORAL), cox);
+	treeModel.Append(Staff(L"Haupt", Staff::RANK::CORPORAL), cox);
+
+	treeModel.Append(lugk, quaas);
+	treeModel.Append(muller, quaas);
+
+	treeModel.Append(Staff(L"Schmidt", Staff::RANK::PRIVATE), muller);
+	treeModel.Append(Staff(L"Titze", Staff::RANK::PRIVATE), muller);
+	treeModel.Append(Staff(L"Uhlig", Staff::RANK::PRIVATE), muller);
+	treeModel.Append(Staff(L"Ebert", Staff::RANK::PRIVATE), muller);
+	treeModel.Append(Staff(L"Hartmann", Staff::RANK::PRIVATE), muller);
+
+	treeModel.Append(Staff(L"Pretsch", Staff::RANK::PRIVATE), lugk);
+	treeModel.Append(Staff(L"Dressler", Staff::RANK::PRIVATE), lugk);
+	treeModel.Append(Staff(L"Pietsch", Staff::RANK::PRIVATE), lugk);
+	treeModel.Append(Staff(L"Lippa", Staff::RANK::PRIVATE), lugk);
+	treeModel.Append(Staff(L"Neumann", Staff::RANK::PRIVATE), lugk);
+	EXPECT_EQ(13, treeModel.SizeLeaveNodes());
+}
+
 /**
 Add an element to return the first element.
 */
@@ -249,6 +282,13 @@ TEST_F(TreeTestSuite, TestJsonSerializationGerman) {
 	EXPECT_TRUE(muller == alsoMuller);
 }
 
+TEST_F(TreeTestSuite, TestJsonSerializationChina) {
+	Staff muller(L"穆勒", Staff::RANK::CORPORAL);
+	json j = static_cast<json>(muller);
+	Staff alsoMuller = j.get<Staff>();
+	EXPECT_TRUE(muller == alsoMuller);
+}
+
 TEST_F(TreeTestSuite, TestJsonSerialization1) {
 	Staff loos(L"Loos", Staff::RANK::STAFF_SERGANT);
 	Staff quaas(L"Quaas", Staff::RANK::SERGANT);
@@ -405,4 +445,119 @@ TEST_F(TreeTestSuite, TestGetFromStructureAndChange) {
 	auto& alsoQuaasSecondGet = treeModel.Get(structure2);
 	EXPECT_EQ(*alsoQuaasSecondGet, quaas);
 	EXPECT_EQ(alsoQuaasSecondGet->GetRank(), Staff::RANK::CORPORAL);
+}
+
+TEST_F(TreeTestSuite, TestUpdatePropertyForAllItems) {
+	Staff loos(L"Loos", Staff::RANK::STAFF_SERGANT);
+	Staff quaas(L"Quaas", Staff::RANK::SERGANT);
+	Staff cox(L"Cox", Staff::RANK::SERGANT);
+	Staff muller(L"Muller", Staff::RANK::CORPORAL);
+	Staff lugk(L"Lugk", Staff::RANK::CORPORAL);
+
+	TreeModel<Staff> treeModel(loos);
+	treeModel.Append(quaas, loos);
+	treeModel.Append(cox, loos);
+	treeModel.Append(Staff(L"Brown", Staff::RANK::SERGANT), loos);
+
+	treeModel.Append(Staff(L"Epheser", Staff::RANK::CORPORAL), cox);
+	treeModel.Append(Staff(L"Haupt", Staff::RANK::CORPORAL), cox);
+
+	treeModel.Append(lugk, quaas);
+	treeModel.Append(muller, quaas);
+
+	Staff schmidt(L"Schmidt", Staff::RANK::PRIVATE);
+	treeModel.Append(Staff(L"Titze", Staff::RANK::PRIVATE), muller);
+	treeModel.Append(Staff(L"Uhlig", Staff::RANK::PRIVATE), muller);
+	treeModel.Append(Staff(L"Ebert", Staff::RANK::PRIVATE), muller);
+	treeModel.Append(Staff(L"Hartmann", Staff::RANK::PRIVATE), muller);
+	treeModel.Append(schmidt, muller);
+
+	auto updateFunction = [](std::unique_ptr<Staff>& staff) {
+		staff->SetRank(Staff::RANK::PRIVATE);
+	};
+
+	treeModel.UpdatePropertyForAllItems(updateFunction);
+
+	auto i = TopDownIterator(treeModel);
+	for (i.First(); !i.IsDone(); i.Next())
+	{
+		EXPECT_EQ(i.CurrentItem().GetRank(), Staff::RANK::PRIVATE);
+	}
+}
+
+TEST_F(TreeTestSuite, TestGetPath1) {
+	Staff loos(L"Loos", Staff::RANK::STAFF_SERGANT);
+	TreeModel<Staff> treeModel(loos);
+	auto path = treeModel.GetPath(0);
+
+	EXPECT_EQ(path[0].GetName(), loos.GetName());
+	EXPECT_EQ(path[0].GetName(), treeModel.Get(0).GetName());
+}
+
+TEST_F(TreeTestSuite, TestGetPath2) {
+	Staff loos(L"Loos", Staff::RANK::STAFF_SERGANT);
+	Staff quaas(L"Quaas", Staff::RANK::SERGANT);
+	Staff cox(L"Cox", Staff::RANK::SERGANT);
+	Staff muller(L"Muller", Staff::RANK::CORPORAL);
+	Staff lugk(L"Lugk", Staff::RANK::CORPORAL);
+
+	henn::TreeModel<Staff> treeModel(loos);
+	treeModel.Append(quaas, loos);
+	treeModel.Append(cox, loos);
+	treeModel.Append(Staff(L"Brown", Staff::RANK::SERGANT), loos);
+
+	treeModel.Append(Staff(L"Epheser", Staff::RANK::CORPORAL), cox);
+	treeModel.Append(Staff(L"Haupt", Staff::RANK::CORPORAL), cox);
+
+	treeModel.Append(lugk, quaas);
+	treeModel.Append(muller, quaas);
+
+	treeModel.Append(Staff(L"Schmidt", Staff::RANK::PRIVATE), muller);
+	treeModel.Append(Staff(L"Titze", Staff::RANK::PRIVATE), muller);
+	treeModel.Append(Staff(L"Uhlig", Staff::RANK::PRIVATE), muller);
+	treeModel.Append(Staff(L"Ebert", Staff::RANK::PRIVATE), muller);
+	treeModel.Append(Staff(L"Hartmann", Staff::RANK::PRIVATE), muller);
+
+	treeModel.Append(Staff(L"Pretsch", Staff::RANK::PRIVATE), lugk);
+	treeModel.Append(Staff(L"Dressler", Staff::RANK::PRIVATE), lugk);
+	treeModel.Append(Staff(L"Pietsch", Staff::RANK::PRIVATE), lugk);
+	treeModel.Append(Staff(L"Lippa", Staff::RANK::PRIVATE), lugk);
+	treeModel.Append(Staff(L"Neumann", Staff::RANK::PRIVATE), lugk);
+	auto path = treeModel.GetPath(17);
+
+	EXPECT_EQ(path[1].GetName(), L"Brown");
+	EXPECT_EQ(path[1].GetName(), treeModel.Get(17).GetName());
+
+
+	auto path2 = treeModel.GetPath(13);
+
+	EXPECT_EQ(path2[3].GetName(), L"Hartmann");
+	EXPECT_EQ(path2[3].GetName(), treeModel.Get(13).GetName());
+}
+
+TEST_F(TreeTestSuite, TestFindItems) {
+	Staff loos(L"Loos", Staff::RANK::STAFF_SERGANT);
+	Staff quaas(L"Quaas", Staff::RANK::SERGANT);
+	Staff cox(L"Cox", Staff::RANK::SERGANT);
+
+	henn::TreeModel<Staff> treeModel(loos);
+	treeModel.Append(quaas, loos);
+	treeModel.Append(cox, loos);
+	treeModel.Append(Staff(L"Brown", Staff::RANK::SERGANT), loos);
+
+	treeModel.Append(Staff(L"Epheser", Staff::RANK::CORPORAL), cox);
+	treeModel.Append(Staff(L"Haupt", Staff::RANK::CORPORAL), cox);
+
+	auto findFunction = [](std::unique_ptr<Staff>& staff) -> bool{
+		return (staff->GetRank() == Staff::RANK::SERGANT);
+	};
+
+	auto result = treeModel.FindItems(findFunction);
+
+	for (auto& i : result)
+	{
+		EXPECT_EQ(i->GetRank(), Staff::RANK::SERGANT);
+	}
+
+	EXPECT_EQ(result.size(), 3);
 }

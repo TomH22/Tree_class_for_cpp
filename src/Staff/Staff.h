@@ -17,6 +17,8 @@ private:
 	RANK rank = RANK::PRIVATE;
 public:
 	Staff() = default;
+	//Staff(const Staff& other) : name(other.name), rank(other.rank) {}
+	//bool operator=(const Staff& other) {};
 	Staff(std::wstring _name, RANK _rank) : name(_name), rank(_rank) {};
 	Staff(std::string _name, RANK _rank);
 	bool operator==(const Staff other) const;

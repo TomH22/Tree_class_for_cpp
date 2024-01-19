@@ -29,9 +29,15 @@ public:
 	{
 		std::unique_ptr<Item> m_Item;
 		std::vector<std::unique_ptr<TreeItem>> m_Children;
-		bool IsLeaveNode() { return m_Children.size() == 0; };
-		bool operator<(const TreeItem &other) const { return (*this->m_Item < *other.m_Item); };
-		bool operator==(const TreeItem &other) const
+		bool IsLeaveNode()
+		{
+			return m_Children.size() == 0;
+		};
+		bool operator<(const TreeItem& other) const
+		{
+			return (*this->m_Item < *other.m_Item);
+		};
+		bool operator==(const TreeItem& other) const
 		{
 			// First, compare the items themselves
 			if (!(*m_Item == *other.m_Item))
@@ -57,31 +63,93 @@ public:
 		}
 	};
 public:
-	TreeModel() { m_nullItemPtr = std::make_unique<Item>(); };
+	TreeModel()
+	{
+		m_nullItemPtr = std::make_unique<Item>();
+	};
 	~TreeModel() = default;
 	TreeModel(const TreeModel& other);
 	TreeModel(const json& j);
 	TreeModel(Item _item);
 	TreeModel& operator=(const TreeModel& other);
-	bool operator==(const TreeModel& other) { return *m_treeItem == *other.m_treeItem; };
-	bool operator!=(const TreeModel& other) { return !(*this == other); };
-	bool Append(Item, Item);
+	bool operator==(const TreeModel& other)
+	{
+		return *m_treeItem == *other.m_treeItem;
+	};
+	bool operator!=(const TreeModel& other)
+	{
+		return !(*this == other);
+	};
+	bool Append(Item _item, Item _parentItem, const bool after = true);
 	Item Get(const size_t);
+	std::vector<Item> GetPath(const size_t index);
 	std::unique_ptr<Item>& Get(std::vector<Item> structure);
-	std::unique_ptr<TreeItem>& GetTreeItem() { return m_treeItem; };
+	std::unique_ptr<TreeItem>& GetTreeItem()
+	{
+		return m_treeItem;
+	};
 	size_t Size() const;
+	size_t SizeLeaveNodes() const;
 	void SortSecondColumn();
 	void SortAllColumns();
-	void Clear() { m_treeItem.reset(); };
+	void Clear()
+	{
+		m_treeItem.reset();
+	};
 	bool IsNull() const;
 	json GetJson() const;
+	template <typename UpdateFunction>
+	void UpdatePropertyForAllItems(UpdateFunction updateFunction)
+	{
+		if (!m_treeItem)
+			return;
+
+		updatePropertyRecursive(m_treeItem, updateFunction);
+	}
+	template <typename FindFunction>
+	std::vector<std::unique_ptr<Item>> FindItems(FindFunction findFunction)
+	{
+		if (!m_treeItem)
+			return std::vector<std::unique_ptr<Item>>{};
+
+		return findItemsRecursive(m_treeItem, findFunction);
+	}
 private:
-	bool addRecursive(std::unique_ptr<TreeItem>&, Item, Item);
+	bool addRecursive(std::unique_ptr<TreeItem>&, Item, Item, const bool after);
 	bool getRecursive(std::unique_ptr<TreeItem>&, Item&, const size_t, size_t&);
-	size_t sizeRecursive(const std::unique_ptr<TreeItem>&) const;
+	bool getRecursivePath(std::unique_ptr<TreeItem>& currentItem, const size_t targetIndex, size_t& currentIndex, std::vector<Item>& path);
+	size_t sizeRecursive(const std::unique_ptr<TreeItem>&, bool) const;
 	void sortColumnsRecursive(std::unique_ptr<TreeItem>&);
 	void copyRecursive(std::unique_ptr<TreeItem>& dest, const std::unique_ptr<TreeItem>& src);
 	void from_json_recursive(std::unique_ptr<TreeItem>& treeItem, const json& j);
+	template <typename UpdateFunction>
+	void updatePropertyRecursive(std::unique_ptr<TreeItem>& currentItem, UpdateFunction updateFunction)
+	{
+		updateFunction(currentItem->m_Item);
+		for (auto& child : currentItem->m_Children)
+		{
+			updatePropertyRecursive(child, updateFunction);
+		}
+	}
+	template <typename FindFunction>
+	std::vector<std::unique_ptr<Item>> findItemsRecursive(std::unique_ptr<TreeItem>& currentItem, FindFunction findFunction)
+	{
+		std::vector<std::unique_ptr<Item>> result{};
+
+		if (findFunction(currentItem->m_Item))
+			result.emplace_back(std::move(std::make_unique<Item>(*currentItem->m_Item)));
+
+		for (auto& child : currentItem->m_Children)
+		{
+			auto ret = findItemsRecursive(child, findFunction);
+			for (auto& e : ret)
+			{
+				result.emplace_back(std::move(std::make_unique<Item>(*e)));
+			}
+		}
+
+		return result;
+	}
 private:
 	std::unique_ptr<TreeItem> m_treeItem;
 	std::unique_ptr<Item> m_nullItemPtr;
@@ -105,7 +173,8 @@ TreeModel<Item>::TreeModel(const json& j)
 {
 	m_nullItemPtr = std::make_unique<Item>();
 
-	if (!j.is_null() && j.contains("item"))
+
+	if (!j.is_null() && j.find("item") != j.end())
 	{
 		m_treeItem = std::make_unique<TreeItem>();
 		from_json_recursive(m_treeItem, j);
@@ -168,14 +237,14 @@ void TreeModel<Item>::copyRecursive(std::unique_ptr<TreeItem>& dest, const std::
 template<typename Item>
 void TreeModel<Item>::from_json_recursive(std::unique_ptr<TreeItem>& treeItem, const json& j)
 {
-	if (!j.is_null() && j.contains("item"))
+	if (!j.is_null() && j.find("item") != j.end())
 	{
 		// Deserialize the item
 		Item item = j["item"].get<Item>();
 		treeItem->m_Item = std::make_unique<Item>(std::move(item));
 
 		// Deserialize the children if they exist
-		if (j.contains("children"))
+		if (j.find("children") != j.end())
 		{
 			for (const auto& child_json : j["children"])
 			{
@@ -218,9 +287,9 @@ doxygen text
 doxygen text
 @throws
 doxygen text
- */
+*/
 template<typename Item>
-bool TreeModel<Item>::Append(Item _item, Item _parentItem)
+bool TreeModel<Item>::Append(Item _item, Item _parentItem, const bool after)
 {
 	bool bAdded = false;
 
@@ -228,14 +297,17 @@ bool TreeModel<Item>::Append(Item _item, Item _parentItem)
 	{
 		auto treeItem = std::make_unique<TreeItem>();
 		treeItem->m_Item = std::make_unique<Item>(_item);
-		m_treeItem->m_Children.emplace_back(std::move(treeItem));
-		bAdded= true;
+		if (after)
+			m_treeItem->m_Children.emplace_back(std::move(treeItem));
+		else
+			m_treeItem->m_Children.insert(m_treeItem->m_Children.begin(), std::move(treeItem));
+		bAdded = true;
 	}
 	else
 	{
 		for (auto& item : m_treeItem->m_Children)
 		{
-			bAdded = addRecursive(item, _item, _parentItem);
+			bAdded = addRecursive(item, _item, _parentItem, after);
 			if (bAdded)
 				break;
 		}
@@ -244,13 +316,16 @@ bool TreeModel<Item>::Append(Item _item, Item _parentItem)
 	return bAdded;
 }
 
+/**
+@note Start is 0
+*/
 template<typename Item>
 Item TreeModel<Item>::Get(const size_t _index)
 {
 	Item result;
 
 	size_t _nCounter = -1;
-	if(!getRecursive(m_treeItem, result, _index, _nCounter))
+	if (!getRecursive(m_treeItem, result, _index, _nCounter))
 		throw new std::exception("Index not found!");
 	return result;
 }
@@ -282,18 +357,21 @@ void TreeModel<Item>::SortAllColumns()
 }
 
 template<class Item>
-void TreeModel<Item>::sortColumnsRecursive(std::unique_ptr<TreeItem> &treeItem)
+void TreeModel<Item>::sortColumnsRecursive(std::unique_ptr<TreeItem>& treeItem)
 {
-	if(treeItem->m_Children.size() < 1)
+	if (treeItem->m_Children.size() < 1)
 		return;
 
 	auto& children = treeItem->m_Children;
-	std::sort(children.begin(), children.end(), [](const std::unique_ptr<TreeItem> &a, const std::unique_ptr< TreeItem> &b)
+	std::sort(children.begin(), children.end(), [](const std::unique_ptr<TreeItem>& a, const std::unique_ptr< TreeItem>& b)
 		{
 			return *a < *b;
 		});
 
-	std::for_each(children.begin(), children.end(), [this](std::unique_ptr<TreeItem> &ti) { sortColumnsRecursive(ti); });
+	std::for_each(children.begin(), children.end(), [this](std::unique_ptr<TreeItem>& ti)
+		{
+			sortColumnsRecursive(ti);
+		});
 }
 
 template<class Item>
@@ -302,60 +380,83 @@ size_t TreeModel<Item>::Size() const
 	if (IsNull())
 		return 0;
 
-	size_t nResult= 1;
+	size_t nResult = 1;
 
 	for (auto& treeItem : m_treeItem->m_Children)
 	{
-		nResult+= sizeRecursive(treeItem);
+		nResult += sizeRecursive(treeItem, false);
+	}
+
+	return nResult;
+}
+
+template<class Item>
+size_t TreeModel<Item>::SizeLeaveNodes() const
+{
+	if (IsNull())
+		return 0;
+
+	size_t nResult = 0;
+
+	for (auto& treeItem : m_treeItem->m_Children)
+	{
+		nResult += sizeRecursive(treeItem, true);
 	}
 
 	return nResult;
 }
 
 template<typename Item>
-bool TreeModel<Item>::addRecursive(std::unique_ptr<TreeItem>& _treeItem, Item _item, Item _parentItem)
+bool TreeModel<Item>::addRecursive(std::unique_ptr<TreeItem>& _treeItem, Item _item, Item _parentItem, bool after)
 {
 	if (*_treeItem->m_Item == _parentItem)
 	{
 		auto elems = std::make_unique<TreeItem>();
 		elems->m_Item = std::make_unique<Item>(_item);
-		_treeItem->m_Children.emplace_back(std::move(elems));
+		if (after)
+			_treeItem->m_Children.emplace_back(std::move(elems));
+		else
+			_treeItem->m_Children.insert(_treeItem->m_Children.begin(), std::move(elems));
 		return true;
 	}
 
 	for (auto& layerChilds : _treeItem->m_Children)
 	{
-		if (addRecursive(layerChilds, _item, _parentItem))
+		if (addRecursive(layerChilds, _item, _parentItem, after))
 			return true;
 	}
 	return false;
 }
 
 template<typename Item>
-size_t TreeModel<Item>::sizeRecursive(const std::unique_ptr<TreeItem>& _treeItem) const
+size_t TreeModel<Item>::sizeRecursive(const std::unique_ptr<TreeItem>& _treeItem, bool _countJustLeaveNodes) const
 {
-	size_t _nCounter= 1;
+	size_t _nCounter = 0;
+
+	if (!_countJustLeaveNodes || (_countJustLeaveNodes && _treeItem->IsLeaveNode()))
+		_nCounter = 1;
+
 	for (auto& treeItem : _treeItem->m_Children)
 	{
-		_nCounter+= sizeRecursive(treeItem);
+		_nCounter += sizeRecursive(treeItem, _countJustLeaveNodes);
 	}
 	return _nCounter;
 };
 
 template<typename Item>
-bool TreeModel<Item>::getRecursive(std::unique_ptr<TreeItem> &_treeItem, Item &_refItem, const size_t _index, size_t& _nCounter)
+bool TreeModel<Item>::getRecursive(std::unique_ptr<TreeItem>& _treeItem, Item& _refItem, const size_t _index, size_t& _nCounter)
 {
 	_nCounter++;
 
-	if(_index == _nCounter)
+	if (_index == _nCounter)
 	{
 		_refItem = *_treeItem->m_Item;
 		return true;
 	}
 
-	for(auto& item : _treeItem->m_Children)
+	for (auto& item : _treeItem->m_Children)
 	{
-		if(getRecursive(item, _refItem, _index, _nCounter))
+		if (getRecursive(item, _refItem, _index, _nCounter))
 		{
 			return true;
 		}
@@ -363,6 +464,49 @@ bool TreeModel<Item>::getRecursive(std::unique_ptr<TreeItem> &_treeItem, Item &_
 
 	return false;
 };
+
+/**
+@note Start is 0
+*/
+template <class Item>
+std::vector<Item> TreeModel<Item>::GetPath(const size_t index)
+{
+	std::vector<Item> path;
+	if (!m_treeItem || index >= Size())
+	{
+		// Return an empty path if the tree is empty or the index is out of bounds
+		return path;
+	}
+
+	size_t currentIndex = 0;
+	getRecursivePath(m_treeItem, index, currentIndex, path);
+	return path;
+}
+
+template <class Item>
+bool TreeModel<Item>::getRecursivePath(std::unique_ptr<TreeItem>& currentItem, const size_t targetIndex, size_t& currentIndex, std::vector<Item>& path)
+{
+	path.push_back(*(currentItem->m_Item));
+
+	if (currentIndex == targetIndex)
+	{
+		// Found the target item, path is complete
+		return true;
+	}
+
+	for (auto& child : currentItem->m_Children)
+	{
+		currentIndex++;
+		// Recursively explore the child's subtree
+		if (getRecursivePath(child, targetIndex, currentIndex, path))
+			return true;
+	}
+
+	// If we reach here, the current item is not on the path to the target item
+	// Remove it from the path
+	path.pop_back();
+	return false;
+}
 
 template<typename Item>
 json TreeModel<Item>::GetJson() const
@@ -415,7 +559,10 @@ std::unique_ptr<Item>& TreeModel<Item>::Get(std::vector<Item> structure)
 	{
 		// Find the child with the current structure item
 		auto it = std::find_if(currentNode->m_Children.begin(), currentNode->m_Children.end(),
-			[&structure, i](const auto& child) { return child->m_Item && *(child->m_Item) == structure[i]; });
+			[&structure, i](const auto& child)
+			{
+				return child->m_Item && *(child->m_Item) == structure[i];
+			});
 
 		if (it == currentNode->m_Children.end())
 		{
@@ -434,11 +581,12 @@ std::unique_ptr<Item>& TreeModel<Item>::Get(std::vector<Item> structure)
 /**
 Iterator base class.
 @see Literature
-	Design Patterns: Elements of Reusable Object-Oriented Software
-	Chapter: BehaviourPatterns / Iterator
+Design Patterns: Elements of Reusable Object-Oriented Software
+Chapter: BehaviourPatterns / Iterator
 */
 template <class Item>
-class Iterator {
+class Iterator
+{
 public:
 	virtual void First() = 0;
 	virtual void Next() = 0;
