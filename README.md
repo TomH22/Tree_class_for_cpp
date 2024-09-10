@@ -1,8 +1,18 @@
 # Tree class for C++
 **This repository provides a tree class implementation for C++, including iterators, tests, and an example.**
 
-The header only file can be found here: [lib/Tree.h](/lib/Tree.h)
+The header only file can be found here: [lib/Tree.h](/lib/Tree.h).
+Tree.h includes [nlohmann/json.hpp](https://github.com/nlohmann/json). Nlohmann Json must be available, otherwise Json serialization can't work!
 
+## Features
+- template based tree items
+- one base iterator and 3 example iterators
+- to and from Json serialization
+- get node per structure or position
+- change unique nodes
+- find unique nodes
+- sort of columns
+  
 ## Sample code for creating tree data ##
 ```C++
 #include "Tree.h"
@@ -25,7 +35,6 @@ Watch the video demonstration:
 
 [![Video](https://img.youtube.com/vi/whSA_vjmbig/0.jpg)](https://www.youtube.com/watch?v=whSA_vjmbig)
 
-
 ## Usage
 **Building the project**
 
@@ -35,7 +44,7 @@ If you just want to build the tests,  you can skip the steps 2-5.
 
 1. clone this repository
 ```
-git clone https://github.com/TomH22/Tree_class_for_cpp.git
+git clone --recursive https://github.com/TomH22/Tree_class_for_cpp.git 
 ```
 2. clone the GLFW repository
 ```
