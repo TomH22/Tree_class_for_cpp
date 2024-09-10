@@ -13,6 +13,7 @@ set(CMAKE_INSTALL_PREFIX "C:/Program Files/${PROJECT_NAME}" CACHE PATH "CMAKE_IN
 
 enable_testing()
 
+add_definitions(-DCMAKE_BINARY_DIR="${CMAKE_BINARY_DIR}")
 add_library(lib INTERFACE)
 
 target_include_directories(lib INTERFACE ${CMAKE_CURRENT_SOURCE_DIR}/lib)
@@ -47,3 +48,4 @@ else()
 endif()
 
 add_subdirectory(test)
+file(COPY ${CMAKE_SOURCE_DIR}/test_data DESTINATION ${CMAKE_BINARY_DIR})

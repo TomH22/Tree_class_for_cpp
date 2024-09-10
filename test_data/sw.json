@@ -1,0 +1,2862 @@
+{
+    "children": [
+        {
+            "children": [
+                {
+                    "children": [
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Grundriss",
+                                    "markForExport": false,
+                                    "name": "Grundriss",
+                                    "note": "Dieser Grundriss ist speziell!"
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Boden",
+                                    "markForExport": false,
+                                    "name": "Boden",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Decke",
+                                    "markForExport": false,
+                                    "name": "Decke",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Wand 1",
+                                    "markForExport": false,
+                                    "name": "Wand 1",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Wand 2",
+                                    "markForExport": false,
+                                    "name": "Wand 2",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Wand 3",
+                                    "markForExport": false,
+                                    "name": "Wand 3",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Wand 4",
+                                    "markForExport": false,
+                                    "name": "Wand 4",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Wand 5",
+                                    "markForExport": false,
+                                    "name": "Wand 5",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Wand 6",
+                                    "markForExport": false,
+                                    "name": "Wand 6",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "3D",
+                                    "markForExport": false,
+                                    "name": "3D",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Ablage",
+                                    "markForExport": false,
+                                    "name": "Ablage",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Grundriss",
+                                    "markForExport": false,
+                                    "name": "Grundriss",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Boden",
+                                    "markForExport": false,
+                                    "name": "Boden",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Decke",
+                                    "markForExport": false,
+                                    "name": "Decke",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Wand 1",
+                                    "markForExport": false,
+                                    "name": "Wand 1",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Wand 2",
+                                    "markForExport": false,
+                                    "name": "Wand 2",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Wand 3",
+                                    "markForExport": false,
+                                    "name": "Wand 3",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Wand 4",
+                                    "markForExport": false,
+                                    "name": "Wand 4",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "3D",
+                                    "markForExport": false,
+                                    "name": "3D",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Grundriss",
+                                    "markForExport": false,
+                                    "name": "Grundriss",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Boden",
+                                    "markForExport": false,
+                                    "name": "Boden",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Decke",
+                                    "markForExport": false,
+                                    "name": "Decke",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Wand 1",
+                                    "markForExport": false,
+                                    "name": "Wand 1",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Wand 2",
+                                    "markForExport": false,
+                                    "name": "Wand 2",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Wand 3",
+                                    "markForExport": false,
+                                    "name": "Wand 3",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Wand 4",
+                                    "markForExport": false,
+                                    "name": "Wand 4",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Dachschräge 1",
+                                    "markForExport": false,
+                                    "name": "Dachschräge 1",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "3D",
+                                    "markForExport": false,
+                                    "name": "3D",
+                                    "note": ""
+                                }
+                            }
+                        }
+                    ],
+                    "item": {
+                        "layer": {
+                            "headline": "Flur",
+                            "markForExport": false,
+                            "name": "Flur",
+                            "note": ""
+                        }
+                    }
+                },
+                {
+                    "children": [
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Grundriss",
+                                    "markForExport": false,
+                                    "name": "Grundriss",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Boden",
+                                    "markForExport": false,
+                                    "name": "Boden",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Decke",
+                                    "markForExport": false,
+                                    "name": "Decke",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Wand 1",
+                                    "markForExport": false,
+                                    "name": "Wand 1",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Wand 2",
+                                    "markForExport": false,
+                                    "name": "Wand 2",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Wand 3",
+                                    "markForExport": false,
+                                    "name": "Wand 3",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Wand 4",
+                                    "markForExport": false,
+                                    "name": "Wand 4",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Wand 5",
+                                    "markForExport": false,
+                                    "name": "Wand 5",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Wand 6",
+                                    "markForExport": false,
+                                    "name": "Wand 6",
+                                    "note": ""
+                                }
+                            }
+                        }
+                    ],
+                    "item": {
+                        "layer": {
+                            "headline": "Bewirtschaftuntsraum",
+                            "markForExport": false,
+                            "name": "Bewirtschaftuntsraum",
+                            "note": ""
+                        }
+                    }
+                },
+                {
+                    "children": [
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Grundriss",
+                                    "markForExport": false,
+                                    "name": "Grundriss",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Boden",
+                                    "markForExport": false,
+                                    "name": "Boden",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Decke",
+                                    "markForExport": false,
+                                    "name": "Decke",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Wand 1",
+                                    "markForExport": false,
+                                    "name": "Wand 1",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Wand 2",
+                                    "markForExport": false,
+                                    "name": "Wand 2",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Wand 3",
+                                    "markForExport": false,
+                                    "name": "Wand 3",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Wand 4",
+                                    "markForExport": false,
+                                    "name": "Wand 4",
+                                    "note": ""
+                                }
+                            }
+                        }
+                    ],
+                    "item": {
+                        "layer": {
+                            "headline": "Gefangenenraum",
+                            "markForExport": false,
+                            "name": "Gefangenenraum",
+                            "note": ""
+                        }
+                    }
+                },
+                {
+                    "children": [
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Grundriss",
+                                    "markForExport": false,
+                                    "name": "Grundriss",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Boden",
+                                    "markForExport": false,
+                                    "name": "Boden",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Decke",
+                                    "markForExport": false,
+                                    "name": "Decke",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Wand 1",
+                                    "markForExport": false,
+                                    "name": "Wand 1",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Wand 2",
+                                    "markForExport": false,
+                                    "name": "Wand 2",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Wand 3",
+                                    "markForExport": false,
+                                    "name": "Wand 3",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Wand 4",
+                                    "markForExport": false,
+                                    "name": "Wand 4",
+                                    "note": ""
+                                }
+                            }
+                        }
+                    ],
+                    "item": {
+                        "layer": {
+                            "headline": "Toilette",
+                            "markForExport": false,
+                            "name": "Toilette",
+                            "note": ""
+                        }
+                    }
+                },
+                {
+                    "children": [
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Grundriss",
+                                    "markForExport": false,
+                                    "name": "Grundriss",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Boden",
+                                    "markForExport": false,
+                                    "name": "Boden",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Decke",
+                                    "markForExport": false,
+                                    "name": "Decke",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Wand 1",
+                                    "markForExport": false,
+                                    "name": "Wand 1",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Wand 2",
+                                    "markForExport": false,
+                                    "name": "Wand 2",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Wand 3",
+                                    "markForExport": false,
+                                    "name": "Wand 3",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Wand 4",
+                                    "markForExport": false,
+                                    "name": "Wand 4",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "3D",
+                                    "markForExport": false,
+                                    "name": "3D",
+                                    "note": ""
+                                }
+                            }
+                        }
+                    ],
+                    "item": {
+                        "layer": {
+                            "headline": "Bad",
+                            "markForExport": false,
+                            "name": "Bad",
+                            "note": ""
+                        }
+                    }
+                },
+                {
+                    "children": [
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Grundriss",
+                                    "markForExport": false,
+                                    "name": "Grundriss",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Boden",
+                                    "markForExport": false,
+                                    "name": "Boden",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Decke",
+                                    "markForExport": false,
+                                    "name": "Decke",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Wand 1",
+                                    "markForExport": false,
+                                    "name": "Wand 1",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Wand 2",
+                                    "markForExport": false,
+                                    "name": "Wand 2",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Wand 3",
+                                    "markForExport": false,
+                                    "name": "Wand 3",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Wand 4",
+                                    "markForExport": false,
+                                    "name": "Wand 4",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Wand 5",
+                                    "markForExport": false,
+                                    "name": "Wand 5",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Wand 6",
+                                    "markForExport": false,
+                                    "name": "Wand 6",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Grundriss",
+                                    "markForExport": false,
+                                    "name": "Grundriss",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Boden",
+                                    "markForExport": false,
+                                    "name": "Boden",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Decke",
+                                    "markForExport": false,
+                                    "name": "Decke",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Wand 1",
+                                    "markForExport": false,
+                                    "name": "Wand 1",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Wand 2",
+                                    "markForExport": false,
+                                    "name": "Wand 2",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Wand 3",
+                                    "markForExport": false,
+                                    "name": "Wand 3",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Wand 4",
+                                    "markForExport": false,
+                                    "name": "Wand 4",
+                                    "note": ""
+                                }
+                            }
+                        }
+                    ],
+                    "item": {
+                        "layer": {
+                            "headline": "Eingang",
+                            "markForExport": false,
+                            "name": "Eingang",
+                            "note": ""
+                        }
+                    }
+                }
+            ],
+            "item": {
+                "layer": {
+                    "headline": "KG",
+                    "markForExport": true,
+                    "name": "KG",
+                    "note": ""
+                }
+            }
+        },
+        {
+            "children": [
+                {
+                    "children": [
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Grundriss",
+                                    "markForExport": false,
+                                    "name": "Grundriss",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Boden",
+                                    "markForExport": false,
+                                    "name": "Boden",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Decke",
+                                    "markForExport": false,
+                                    "name": "Decke",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Wand 1",
+                                    "markForExport": false,
+                                    "name": "Wand 1",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Wand 2",
+                                    "markForExport": false,
+                                    "name": "Wand 2",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Wand 3",
+                                    "markForExport": false,
+                                    "name": "Wand 3",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Wand 4",
+                                    "markForExport": false,
+                                    "name": "Wand 4",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "3D",
+                                    "markForExport": false,
+                                    "name": "3D",
+                                    "note": ""
+                                }
+                            }
+                        }
+                    ],
+                    "item": {
+                        "layer": {
+                            "headline": "Hinterzimmer",
+                            "markForExport": false,
+                            "name": "Hinterzimmer",
+                            "note": ""
+                        }
+                    }
+                },
+                {
+                    "children": [
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Grundriss",
+                                    "markForExport": false,
+                                    "name": "Grundriss",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Boden",
+                                    "markForExport": false,
+                                    "name": "Boden",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Decke",
+                                    "markForExport": false,
+                                    "name": "Decke",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Wand 1",
+                                    "markForExport": false,
+                                    "name": "Wand 1",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Wand 2",
+                                    "markForExport": false,
+                                    "name": "Wand 2",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Wand 3",
+                                    "markForExport": false,
+                                    "name": "Wand 3",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Wand 4",
+                                    "markForExport": false,
+                                    "name": "Wand 4",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Wand 5",
+                                    "markForExport": false,
+                                    "name": "Wand 5",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Wand 6",
+                                    "markForExport": false,
+                                    "name": "Wand 6",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "3D",
+                                    "markForExport": false,
+                                    "name": "3D",
+                                    "note": ""
+                                }
+                            }
+                        }
+                    ],
+                    "item": {
+                        "layer": {
+                            "headline": "Küche",
+                            "markForExport": false,
+                            "name": "Küche",
+                            "note": ""
+                        }
+                    }
+                },
+                {
+                        "children": [                        
+						{
+                            "item": {
+                                "layer": {
+                                    "headline": "Grundriss",
+                                    "markForExport": false,
+                                    "name": "Grundriss",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Boden",
+                                    "markForExport": false,
+                                    "name": "Boden",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Decke",
+                                    "markForExport": false,
+                                    "name": "Decke",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Wand 1",
+                                    "markForExport": false,
+                                    "name": "Wand 1",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Wand 2",
+                                    "markForExport": false,
+                                    "name": "Wand 2",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Wand 3",
+                                    "markForExport": false,
+                                    "name": "Wand 3",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Wand 4",
+                                    "markForExport": false,
+                                    "name": "Wand 4",
+                                    "note": ""
+                                }
+                            }
+                        }
+                    ],
+                    "item": {
+                        "layer": {
+                            "headline": "Flur",
+                            "markForExport": false,
+                            "name": "Flur",
+                            "note": ""
+                        }
+                    }
+                },
+                {
+                    "children": [                        
+						{
+                            "item": {
+                                "layer": {
+                                    "headline": "Grundriss",
+                                    "markForExport": false,
+                                    "name": "Grundriss",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Boden",
+                                    "markForExport": false,
+                                    "name": "Boden",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Decke",
+                                    "markForExport": false,
+                                    "name": "Decke",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Wand 1",
+                                    "markForExport": false,
+                                    "name": "Wand 1",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Wand 2",
+                                    "markForExport": false,
+                                    "name": "Wand 2",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Wand 3",
+                                    "markForExport": false,
+                                    "name": "Wand 3",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Wand 4",
+                                    "markForExport": false,
+                                    "name": "Wand 4",
+                                    "note": ""
+                                }
+                            }
+                        }
+                    ],                    
+                    "item": {
+                        "layer": {
+                            "headline": "Eingang",
+                            "markForExport": false,
+                            "name": "Eingang",
+                            "note": ""
+                        }
+                    }
+                },
+                {
+                    "children": [
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Grundriss",
+                                    "markForExport": false,
+                                    "name": "Grundriss",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Boden",
+                                    "markForExport": false,
+                                    "name": "Boden",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Decke",
+                                    "markForExport": false,
+                                    "name": "Decke",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Wand 1",
+                                    "markForExport": false,
+                                    "name": "Wand 1",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Wand 2",
+                                    "markForExport": false,
+                                    "name": "Wand 2",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Wand 3",
+                                    "markForExport": false,
+                                    "name": "Wand 3",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Wand 4",
+                                    "markForExport": false,
+                                    "name": "Wand 4",
+                                    "note": ""
+                                }
+                            }
+                        }
+                    ],
+                    "item": {
+                        "layer": {
+                            "headline": "Schuhraum",
+                            "markForExport": false,
+                            "name": "Schuhraum",
+                            "note": ""
+                        }
+                    }
+                },
+                {
+                    "children": [
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Grundriss",
+                                    "markForExport": false,
+                                    "name": "Grundriss",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Boden",
+                                    "markForExport": false,
+                                    "name": "Boden",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Decke",
+                                    "markForExport": false,
+                                    "name": "Decke",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Wand 1",
+                                    "markForExport": false,
+                                    "name": "Wand 1",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Wand 2",
+                                    "markForExport": false,
+                                    "name": "Wand 2",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Wand 3",
+                                    "markForExport": false,
+                                    "name": "Wand 3",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Wand 4",
+                                    "markForExport": false,
+                                    "name": "Wand 4",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "3D",
+                                    "markForExport": false,
+                                    "name": "3D",
+                                    "note": ""
+                                }
+                            }
+                        }
+                    ],
+                    "item": {
+                        "layer": {
+                            "headline": "Stube",
+                            "markForExport": false,
+                            "name": "Stube",
+                            "note": ""
+                        }
+                    }
+                },
+                {
+                    "children": [
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Grundriss",
+                                    "markForExport": false,
+                                    "name": "Grundriss",
+                                    "note": ""
+                                }
+                            }
+                        }
+                    ],
+                    "item": {
+                        "layer": {
+                            "headline": "Garage",
+                            "markForExport": false,
+                            "name": "Garage",
+                            "note": ""
+                        }
+                    }
+                }
+            ],
+            "item": {
+                "layer": {
+                    "headline": "EG",
+                    "markForExport": false,
+                    "name": "EG",
+                    "note": ""
+                }
+            }
+        },
+        {
+            "children": [
+                {
+                    "children": [
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Grundriss",
+                                    "markForExport": false,
+                                    "name": "Grundriss",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Boden",
+                                    "markForExport": false,
+                                    "name": "Boden",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Decke",
+                                    "markForExport": false,
+                                    "name": "Decke",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Wand 1",
+                                    "markForExport": false,
+                                    "name": "Wand 1",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Wand 2",
+                                    "markForExport": false,
+                                    "name": "Wand 2",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Wand 3",
+                                    "markForExport": false,
+                                    "name": "Wand 3",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Wand 4",
+                                    "markForExport": false,
+                                    "name": "Wand 4",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "3D",
+                                    "markForExport": false,
+                                    "name": "3D",
+                                    "note": ""
+                                }
+                            }
+                        }
+                    ],
+                    "item": {
+                        "layer": {
+                            "headline": "ObenRechts",
+                            "markForExport": false,
+                            "name": "ObenRechts",
+                            "note": ""
+                        }
+                    }
+                },
+                {
+                    "item": {
+                        "layer": {
+                            "headline": "Flur",
+                            "markForExport": false,
+                            "name": "Flur",
+                            "note": ""
+                        }
+                    }
+                },
+                {
+                    "children": [
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Grundriss",
+                                    "markForExport": false,
+                                    "name": "Grundriss",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Boden",
+                                    "markForExport": false,
+                                    "name": "Boden",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Decke",
+                                    "markForExport": false,
+                                    "name": "Decke",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Wand 1",
+                                    "markForExport": false,
+                                    "name": "Wand 1",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Wand 2",
+                                    "markForExport": false,
+                                    "name": "Wand 2",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Wand 3",
+                                    "markForExport": false,
+                                    "name": "Wand 3",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Wand 4",
+                                    "markForExport": false,
+                                    "name": "Wand 4",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Wand 5",
+                                    "markForExport": false,
+                                    "name": "Wand 5",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Wand 6",
+                                    "markForExport": false,
+                                    "name": "Wand 6",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "3D",
+                                    "markForExport": false,
+                                    "name": "3D",
+                                    "note": ""
+                                }
+                            }
+                        }
+                    ],
+                    "item": {
+                        "layer": {
+                            "headline": "Geradeaus",
+                            "markForExport": false,
+                            "name": "Geradeaus",
+                            "note": ""
+                        }
+                    }
+                },
+                {
+                    "children": [
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Grundriss",
+                                    "markForExport": false,
+                                    "name": "Grundriss",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Boden",
+                                    "markForExport": false,
+                                    "name": "Boden",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Decke",
+                                    "markForExport": false,
+                                    "name": "Decke",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Wand 1",
+                                    "markForExport": false,
+                                    "name": "Wand 1",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Wand 2",
+                                    "markForExport": false,
+                                    "name": "Wand 2",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Wand 3",
+                                    "markForExport": false,
+                                    "name": "Wand 3",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Wand 4",
+                                    "markForExport": false,
+                                    "name": "Wand 4",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Dachschräge 1",
+                                    "markForExport": false,
+                                    "name": "Dachschräge 1",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "3D",
+                                    "markForExport": false,
+                                    "name": "3D",
+                                    "note": ""
+                                }
+                            }
+                        }
+                    ],
+                    "item": {
+                        "layer": {
+                            "headline": "Geraudeaus_hinten",
+                            "markForExport": false,
+                            "name": "Geraudeaus_hinten",
+                            "note": ""
+                        }
+                    }
+                }
+            ],
+            "item": {
+                "layer": {
+                    "headline": "OG",
+                    "markForExport": false,
+                    "name": "OG",
+                    "note": ""
+                }
+            }
+        },
+        {
+            "children": [
+                {
+                    "children": [
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Grundriss",
+                                    "markForExport": false,
+                                    "name": "Grundriss",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Boden",
+                                    "markForExport": false,
+                                    "name": "Boden",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Decke",
+                                    "markForExport": false,
+                                    "name": "Decke",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Wand 1",
+                                    "markForExport": false,
+                                    "name": "Wand 1",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Wand 2",
+                                    "markForExport": false,
+                                    "name": "Wand 2",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Wand 3",
+                                    "markForExport": false,
+                                    "name": "Wand 3",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Wand 4",
+                                    "markForExport": false,
+                                    "name": "Wand 4",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "3D",
+                                    "markForExport": false,
+                                    "name": "3D",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Dachschräge 1",
+                                    "markForExport": false,
+                                    "name": "Dachschräge 1",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Dachschräge 2",
+                                    "markForExport": false,
+                                    "name": "Dachschräge 2",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Dachschräge 3",
+                                    "markForExport": false,
+                                    "name": "Dachschräge 3",
+                                    "note": ""
+                                }
+                            }
+                        }
+                    ],
+                    "item": {
+                        "layer": {
+                            "headline": "Vorderraum",
+                            "markForExport": false,
+                            "name": "Vorderraum",
+                            "note": ""
+                        }
+                    }
+                },
+                {
+                    "children": [
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Grundriss",
+                                    "markForExport": false,
+                                    "name": "Grundriss",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Boden",
+                                    "markForExport": false,
+                                    "name": "Boden",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Decke",
+                                    "markForExport": false,
+                                    "name": "Decke",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Wand 1",
+                                    "markForExport": false,
+                                    "name": "Wand 1",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Wand 2",
+                                    "markForExport": false,
+                                    "name": "Wand 2",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Wand 3",
+                                    "markForExport": false,
+                                    "name": "Wand 3",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Wand 4",
+                                    "markForExport": false,
+                                    "name": "Wand 4",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Dachschräge 1",
+                                    "markForExport": false,
+                                    "name": "Dachschräge 1",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Dachschräge 2",
+                                    "markForExport": false,
+                                    "name": "Dachschräge 2",
+                                    "note": ""
+                                }
+                            }
+                        }
+                    ],
+                    "item": {
+                        "layer": {
+                            "headline": "Hinterraum",
+                            "markForExport": false,
+                            "name": "Hinterraum",
+                            "note": ""
+                        }
+                    }
+                }
+            ],
+            "item": {
+                "layer": {
+                    "headline": "DG",
+                    "markForExport": false,
+                    "name": "DG",
+                    "note": ""
+                }
+            }
+        },
+        {
+            "children": [
+                {
+                    "children": [
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Ortbetontkern",
+                                    "markForExport": false,
+                                    "name": "Ortbetontkern",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Stufenhöhen",
+                                    "markForExport": false,
+                                    "name": "Stufenhöhen",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "children": [
+                                {
+                                    "children": [
+                                        {
+                                            "item": {
+                                                "layer": {
+                                                    "headline": "Stufe 1",
+                                                    "markForExport": false,
+                                                    "name": "Stufe 1",
+                                                    "note": ""
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "item": {
+                                                "layer": {
+                                                    "headline": "Stufe 2",
+                                                    "markForExport": false,
+                                                    "name": "Stufe 2",
+                                                    "note": ""
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "item": {
+                                                "layer": {
+                                                    "headline": "Stufe 3",
+                                                    "markForExport": false,
+                                                    "name": "Stufe 3",
+                                                    "note": ""
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "item": {
+                                                "layer": {
+                                                    "headline": "Stufe 4",
+                                                    "markForExport": false,
+                                                    "name": "Stufe 4",
+                                                    "note": ""
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "item": {
+                                                "layer": {
+                                                    "headline": "Stufe 5",
+                                                    "markForExport": false,
+                                                    "name": "Stufe 5",
+                                                    "note": ""
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "item": {
+                                                "layer": {
+                                                    "headline": "Stufe 6",
+                                                    "markForExport": false,
+                                                    "name": "Stufe 6",
+                                                    "note": ""
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "item": {
+                                                "layer": {
+                                                    "headline": "Stufe 1",
+                                                    "markForExport": false,
+                                                    "name": "Stufe 1",
+                                                    "note": ""
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "item": {
+                                                "layer": {
+                                                    "headline": "Stufe 2",
+                                                    "markForExport": false,
+                                                    "name": "Stufe 2",
+                                                    "note": ""
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "item": {
+                                                "layer": {
+                                                    "headline": "Stufe 3",
+                                                    "markForExport": false,
+                                                    "name": "Stufe 3",
+                                                    "note": ""
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "item": {
+                                                "layer": {
+                                                    "headline": "Stufe 4",
+                                                    "markForExport": false,
+                                                    "name": "Stufe 4",
+                                                    "note": ""
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "item": {
+                                                "layer": {
+                                                    "headline": "Stufe 5",
+                                                    "markForExport": false,
+                                                    "name": "Stufe 5",
+                                                    "note": ""
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "item": {
+                                                "layer": {
+                                                    "headline": "Stufe 6",
+                                                    "markForExport": false,
+                                                    "name": "Stufe 6",
+                                                    "note": ""
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "item": {
+                                                "layer": {
+                                                    "headline": "Stufe 7",
+                                                    "markForExport": false,
+                                                    "name": "Stufe 7",
+                                                    "note": ""
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "item": {
+                                                "layer": {
+                                                    "headline": "Stufe 8",
+                                                    "markForExport": false,
+                                                    "name": "Stufe 8",
+                                                    "note": ""
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "item": {
+                                                "layer": {
+                                                    "headline": "Stufe 9",
+                                                    "markForExport": false,
+                                                    "name": "Stufe 9",
+                                                    "note": ""
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "item": {
+                                                "layer": {
+                                                    "headline": "Stufe 10",
+                                                    "markForExport": false,
+                                                    "name": "Stufe 10",
+                                                    "note": ""
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "item": {
+                                                "layer": {
+                                                    "headline": "Stufe 11",
+                                                    "markForExport": false,
+                                                    "name": "Stufe 11",
+                                                    "note": ""
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "item": {
+                                                "layer": {
+                                                    "headline": "Stufe 12",
+                                                    "markForExport": false,
+                                                    "name": "Stufe 12",
+                                                    "note": ""
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "item": {
+                                                "layer": {
+                                                    "headline": "Stufe 13",
+                                                    "markForExport": false,
+                                                    "name": "Stufe 13",
+                                                    "note": ""
+                                                }
+                                            }
+                                        }
+                                    ],
+                                    "item": {
+                                        "layer": {
+                                            "headline": "Stufen",
+                                            "markForExport": false,
+                                            "name": "Stufen",
+                                            "note": ""
+                                        }
+                                    }
+                                },
+                                {
+                                    "children": [
+                                        {
+                                            "item": {
+                                                "layer": {
+                                                    "headline": "Setzstufe 1",
+                                                    "markForExport": false,
+                                                    "name": "Setzstufe 1",
+                                                    "note": ""
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "item": {
+                                                "layer": {
+                                                    "headline": "Setzstufe 2",
+                                                    "markForExport": false,
+                                                    "name": "Setzstufe 2",
+                                                    "note": ""
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "item": {
+                                                "layer": {
+                                                    "headline": "Setzstufe 3",
+                                                    "markForExport": false,
+                                                    "name": "Setzstufe 3",
+                                                    "note": ""
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "item": {
+                                                "layer": {
+                                                    "headline": "Setzstufe 4",
+                                                    "markForExport": false,
+                                                    "name": "Setzstufe 4",
+                                                    "note": ""
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "item": {
+                                                "layer": {
+                                                    "headline": "Setzstufe 5",
+                                                    "markForExport": false,
+                                                    "name": "Setzstufe 5",
+                                                    "note": ""
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "item": {
+                                                "layer": {
+                                                    "headline": "Setzstufe 6",
+                                                    "markForExport": false,
+                                                    "name": "Setzstufe 6",
+                                                    "note": ""
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "item": {
+                                                "layer": {
+                                                    "headline": "Setzstufe 7",
+                                                    "markForExport": false,
+                                                    "name": "Setzstufe 7",
+                                                    "note": ""
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "item": {
+                                                "layer": {
+                                                    "headline": "Setzstufe 1",
+                                                    "markForExport": false,
+                                                    "name": "Setzstufe 1",
+                                                    "note": ""
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "item": {
+                                                "layer": {
+                                                    "headline": "Setzstufe 2",
+                                                    "markForExport": false,
+                                                    "name": "Setzstufe 2",
+                                                    "note": ""
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "item": {
+                                                "layer": {
+                                                    "headline": "Setzstufe 3",
+                                                    "markForExport": false,
+                                                    "name": "Setzstufe 3",
+                                                    "note": ""
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "item": {
+                                                "layer": {
+                                                    "headline": "Setzstufe 4",
+                                                    "markForExport": false,
+                                                    "name": "Setzstufe 4",
+                                                    "note": ""
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "item": {
+                                                "layer": {
+                                                    "headline": "Setzstufe 5",
+                                                    "markForExport": false,
+                                                    "name": "Setzstufe 5",
+                                                    "note": ""
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "item": {
+                                                "layer": {
+                                                    "headline": "Setzstufe 6",
+                                                    "markForExport": false,
+                                                    "name": "Setzstufe 6",
+                                                    "note": ""
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "item": {
+                                                "layer": {
+                                                    "headline": "Setzstufe 7",
+                                                    "markForExport": false,
+                                                    "name": "Setzstufe 7",
+                                                    "note": ""
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "item": {
+                                                "layer": {
+                                                    "headline": "Setzstufe 8",
+                                                    "markForExport": false,
+                                                    "name": "Setzstufe 8",
+                                                    "note": ""
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "item": {
+                                                "layer": {
+                                                    "headline": "Setzstufe 9",
+                                                    "markForExport": false,
+                                                    "name": "Setzstufe 9",
+                                                    "note": ""
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "item": {
+                                                "layer": {
+                                                    "headline": "Setzstufe 10",
+                                                    "markForExport": false,
+                                                    "name": "Setzstufe 10",
+                                                    "note": ""
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "item": {
+                                                "layer": {
+                                                    "headline": "Setzstufe 11",
+                                                    "markForExport": false,
+                                                    "name": "Setzstufe 11",
+                                                    "note": ""
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "item": {
+                                                "layer": {
+                                                    "headline": "Setzstufe 12",
+                                                    "markForExport": false,
+                                                    "name": "Setzstufe 12",
+                                                    "note": ""
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "item": {
+                                                "layer": {
+                                                    "headline": "Setzstufe 13",
+                                                    "markForExport": false,
+                                                    "name": "Setzstufe 13",
+                                                    "note": ""
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "item": {
+                                                "layer": {
+                                                    "headline": "Setzstufe 14",
+                                                    "markForExport": false,
+                                                    "name": "Setzstufe 14",
+                                                    "note": ""
+                                                }
+                                            }
+                                        }
+                                    ],
+                                    "item": {
+                                        "layer": {
+                                            "headline": "Setzstufen",
+                                            "markForExport": false,
+                                            "name": "Setzstufen",
+                                            "note": ""
+                                        }
+                                    }
+                                },
+                                {
+                                    "children": [
+                                        {
+                                            "item": {
+                                                "layer": {
+                                                    "headline": "Hinterkante 1",
+                                                    "markForExport": false,
+                                                    "name": "Hinterkante 1",
+                                                    "note": ""
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "item": {
+                                                "layer": {
+                                                    "headline": "Hinterkante 2",
+                                                    "markForExport": false,
+                                                    "name": "Hinterkante 2",
+                                                    "note": ""
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "item": {
+                                                "layer": {
+                                                    "headline": "Hinterkante 3",
+                                                    "markForExport": false,
+                                                    "name": "Hinterkante 3",
+                                                    "note": ""
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "item": {
+                                                "layer": {
+                                                    "headline": "Hinterkante 4",
+                                                    "markForExport": false,
+                                                    "name": "Hinterkante 4",
+                                                    "note": ""
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "item": {
+                                                "layer": {
+                                                    "headline": "Hinterkante 5",
+                                                    "markForExport": false,
+                                                    "name": "Hinterkante 5",
+                                                    "note": ""
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "item": {
+                                                "layer": {
+                                                    "headline": "Hinterkante 6",
+                                                    "markForExport": false,
+                                                    "name": "Hinterkante 6",
+                                                    "note": ""
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "item": {
+                                                "layer": {
+                                                    "headline": "Hinterkante 7",
+                                                    "markForExport": false,
+                                                    "name": "Hinterkante 7",
+                                                    "note": ""
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "item": {
+                                                "layer": {
+                                                    "headline": "Hinterkante 1",
+                                                    "markForExport": false,
+                                                    "name": "Hinterkante 1",
+                                                    "note": ""
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "item": {
+                                                "layer": {
+                                                    "headline": "Hinterkante 2",
+                                                    "markForExport": false,
+                                                    "name": "Hinterkante 2",
+                                                    "note": ""
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "item": {
+                                                "layer": {
+                                                    "headline": "Hinterkante 3",
+                                                    "markForExport": false,
+                                                    "name": "Hinterkante 3",
+                                                    "note": ""
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "item": {
+                                                "layer": {
+                                                    "headline": "Hinterkante 4",
+                                                    "markForExport": false,
+                                                    "name": "Hinterkante 4",
+                                                    "note": ""
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "item": {
+                                                "layer": {
+                                                    "headline": "Hinterkante 5",
+                                                    "markForExport": false,
+                                                    "name": "Hinterkante 5",
+                                                    "note": ""
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "item": {
+                                                "layer": {
+                                                    "headline": "Hinterkante 6",
+                                                    "markForExport": false,
+                                                    "name": "Hinterkante 6",
+                                                    "note": ""
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "item": {
+                                                "layer": {
+                                                    "headline": "Hinterkante 7",
+                                                    "markForExport": false,
+                                                    "name": "Hinterkante 7",
+                                                    "note": ""
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "item": {
+                                                "layer": {
+                                                    "headline": "Hinterkante 8",
+                                                    "markForExport": false,
+                                                    "name": "Hinterkante 8",
+                                                    "note": ""
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "item": {
+                                                "layer": {
+                                                    "headline": "Hinterkante 9",
+                                                    "markForExport": false,
+                                                    "name": "Hinterkante 9",
+                                                    "note": ""
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "item": {
+                                                "layer": {
+                                                    "headline": "Hinterkante 10",
+                                                    "markForExport": false,
+                                                    "name": "Hinterkante 10",
+                                                    "note": ""
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "item": {
+                                                "layer": {
+                                                    "headline": "Hinterkante 11",
+                                                    "markForExport": false,
+                                                    "name": "Hinterkante 11",
+                                                    "note": ""
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "item": {
+                                                "layer": {
+                                                    "headline": "Hinterkante 12",
+                                                    "markForExport": false,
+                                                    "name": "Hinterkante 12",
+                                                    "note": ""
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "item": {
+                                                "layer": {
+                                                    "headline": "Hinterkante 13",
+                                                    "markForExport": false,
+                                                    "name": "Hinterkante 13",
+                                                    "note": ""
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "item": {
+                                                "layer": {
+                                                    "headline": "Hinterkante 14",
+                                                    "markForExport": false,
+                                                    "name": "Hinterkante 14",
+                                                    "note": ""
+                                                }
+                                            }
+                                        }
+                                    ],
+                                    "item": {
+                                        "layer": {
+                                            "headline": "Hinterkanten",
+                                            "markForExport": false,
+                                            "name": "Hinterkanten",
+                                            "note": ""
+                                        }
+                                    }
+                                },
+                                {
+                                    "item": {
+                                        "layer": {
+                                            "headline": "2D-Treppe",
+                                            "markForExport": false,
+                                            "name": "2D-Treppe",
+                                            "note": ""
+                                        }
+                                    }
+                                },
+                                {
+                                    "item": {
+                                        "layer": {
+                                            "headline": "Stufenverlauf aussen",
+                                            "markForExport": false,
+                                            "name": "Stufenverlauf aussen",
+                                            "note": ""
+                                        }
+                                    }
+                                },
+                                {
+                                    "item": {
+                                        "layer": {
+                                            "headline": "Stufenverlauf innen",
+                                            "markForExport": false,
+                                            "name": "Stufenverlauf innen",
+                                            "note": ""
+                                        }
+                                    }
+                                },
+                                {
+                                    "item": {
+                                        "layer": {
+                                            "headline": "Stufen",
+                                            "markForExport": false,
+                                            "name": "Stufen",
+                                            "note": ""
+                                        }
+                                    }
+                                },
+                                {
+                                    "item": {
+                                        "layer": {
+                                            "headline": "Setzstufen",
+                                            "markForExport": false,
+                                            "name": "Setzstufen",
+                                            "note": ""
+                                        }
+                                    }
+                                },
+                                {
+                                    "item": {
+                                        "layer": {
+                                            "headline": "Hinterkanten",
+                                            "markForExport": false,
+                                            "name": "Hinterkanten",
+                                            "note": ""
+                                        }
+                                    }
+                                },
+                                {
+                                    "item": {
+                                        "layer": {
+                                            "headline": "2D-Treppe",
+                                            "markForExport": false,
+                                            "name": "2D-Treppe",
+                                            "note": ""
+                                        }
+                                    }
+                                },
+                                {
+                                    "item": {
+                                        "layer": {
+                                            "headline": "Stufenverlauf aussen",
+                                            "markForExport": false,
+                                            "name": "Stufenverlauf aussen",
+                                            "note": ""
+                                        }
+                                    }
+                                },
+                                {
+                                    "item": {
+                                        "layer": {
+                                            "headline": "Stufenverlauf innen",
+                                            "markForExport": false,
+                                            "name": "Stufenverlauf innen",
+                                            "note": ""
+                                        }
+                                    }
+                                }
+                            ],
+                            "item": {
+                                "layer": {
+                                    "headline": "3D-Treppe",
+                                    "markForExport": false,
+                                    "name": "3D-Treppe",
+                                    "note": ""
+                                }
+                            }
+                        }
+                    ],
+                    "item": {
+                        "layer": {
+                            "headline": "EG-OG",
+                            "markForExport": false,
+                            "name": "EG-OG",
+                            "note": ""
+                        }
+                    }
+                },
+                {
+                    "children": [
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Ortbetonkern",
+                                    "markForExport": false,
+                                    "name": "Ortbetonkern",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Stufenhöhen",
+                                    "markForExport": false,
+                                    "name": "Stufenhöhen",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "3D-Treppe",
+                                    "markForExport": false,
+                                    "name": "3D-Treppe",
+                                    "note": ""
+                                }
+                            }
+                        }
+                    ],
+                    "item": {
+                        "layer": {
+                            "headline": "OG-DG",
+                            "markForExport": false,
+                            "name": "OG-DG",
+                            "note": ""
+                        }
+                    }
+                }
+            ],
+            "item": {
+                "layer": {
+                    "headline": "Treppenanlage",
+                    "markForExport": false,
+                    "name": "Treppenanlage",
+                    "note": ""
+                }
+            }
+        },
+        {
+            "children": [
+                {
+                    "item": {
+                        "layer": {
+                            "headline": "EGDach",
+                            "markForExport": false,
+                            "name": "EGDach",
+                            "note": ""
+                        }
+                    }
+                },
+                {
+                    "item": {
+                        "layer": {
+                            "headline": "EGDachSchräg",
+                            "markForExport": false,
+                            "name": "EGDachSchräg",
+                            "note": ""
+                        }
+                    }
+                },
+                {
+                    "item": {
+                        "layer": {
+                            "headline": "EGEinganDach",
+                            "markForExport": false,
+                            "name": "EGEinganDach",
+                            "note": ""
+                        }
+                    }
+                }
+            ],
+            "item": {
+                "layer": {
+                    "headline": "Dachfläche",
+                    "markForExport": false,
+                    "name": "Dachfläche",
+                    "note": ""
+                }
+            }
+        }
+    ],
+    "item": {
+        "layer": {
+            "headline": "Siedlungsweg",
+            "markForExport": false,
+            "name": "Siedlungsweg",
+            "note": ""
+        }
+    }
+}

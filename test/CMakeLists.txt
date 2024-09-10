@@ -10,8 +10,8 @@ FetchContent_Declare(
 set(gtest_force_shared_crt ON CACHE BOOL "" FORCE)
 FetchContent_MakeAvailable(googletest)
 
-add_executable(unit_tests tree_test.cpp ${PROJECT_SOURCE_DIR}/src/Staff/Staff.cpp)
+add_executable(unit_tests tree_test.cpp ${PROJECT_SOURCE_DIR}/src/Staff/Staff.cpp tree_test2.cpp Layer.cpp)
 target_link_libraries(unit_tests PRIVATE lib gtest_main)
-target_include_directories(unit_tests PRIVATE ${PROJECT_SOURCE_DIR}/src/Staff)
+target_include_directories(unit_tests PRIVATE ${PROJECT_SOURCE_DIR}/src/Staff .)
 include(GoogleTest)
 gtest_discover_tests(unit_tests)
