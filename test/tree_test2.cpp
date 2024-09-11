@@ -9,26 +9,38 @@
 #include <codecvt>
 #include <locale>
 
-using namespace std;
-using namespace henn;
-
 class TreeTestSuite2 : public ::testing::Test {
  protected:
 	 void SetUp() override
 	 {
 		 std::string test_data_path = CMAKE_BINARY_DIR "/test_data/";
-		 std::ifstream file(test_data_path + "sw.json");
-		 //file.imbue(std::locale(file.getloc(), new std::codecvt_utf8<char>));
 
-		 json j;
-		 file >> j;
+		 {
+			 std::ifstream file(test_data_path + "sw.json");
 
-		 henn::TreeModel<Layer> treeModel(j);
-		 m_TreeModel = treeModel;
+			 json j;
+			 file >> j;
+
+			 henn::TreeModel<Layer> treeModel(j);
+			 m_TreeModel = treeModel;
+		 }
+
+		 {
+			 std::ifstream file(test_data_path + "sw.unique.json");
+
+			 json j;
+			 file >> j;
+
+			 henn::TreeModel<Layer> treeModel(j);
+			 m_TreeModelUnique = treeModel;
+		 }
 	 }
 protected:
 	henn::TreeModel<Layer> m_TreeModel;
+	henn::TreeModel<Layer> m_TreeModelUnique;
 };
+
+
 
 /**
 Add one element to the tree and test its value.
@@ -260,4 +272,88 @@ TEST_F(TreeTestSuite2, TestFindItems)
 
 	auto result = m_TreeModel.FindItems(findFunction);
 	EXPECT_EQ(result[0]->name, "Schuhraum");
+}
+
+TEST_F(TreeTestSuite2, TestAddSameTreesInTrees)
+{
+
+	Layer fEG;
+	fEG.name = "Flur";
+	fEG.nameUnique = "ad8f";
+	Layer fKG;
+	fKG.name = "Flur";
+	fKG.nameUnique = "3bb20cd9";
+	Layer l1;
+	l1.name = "Siedlungsweg";
+	l1.nameUnique = "fc6e9255";
+	Layer l2;
+	l2.name = "KG";
+	l2.nameUnique = "471d";
+	Layer l3;
+	l3.name = "EG";
+	l3.nameUnique = "5158635272ee";
+
+	std::vector structure1{ l1, l2, fKG };
+	auto& flur1 = m_TreeModelUnique.Get(structure1);
+
+	std::vector structure2{ l1, l3, fEG };
+	auto& flur2 = m_TreeModelUnique.Get(structure2);
+
+	Layer l6;
+	l6.name = "Riss_1";
+	m_TreeModelUnique.Append(l6, *flur2, true);
+	flur2->markForExport = true;
+
+	if(false)
+	{
+		std::string test_data_path = CMAKE_BINARY_DIR "/test_data/";
+		auto j = m_TreeModelUnique.GetJson();
+		std::ofstream file(test_data_path + "out.json");
+		file << j;
+	}
+
+	// "Flur" in KG should not be changed.
+	{
+		auto upTreeItem = std::make_unique<TreeModel<Layer>::TreeItem>();
+		auto ret = m_TreeModelUnique.GetCopy(fKG, upTreeItem);
+
+		auto m = std::make_unique<TreeModel<Layer>>(move(upTreeItem));
+		auto i = LayerListIterator(*m);
+		int counter = 0;
+		for (i.First(); !i.IsDone(); i.Next())
+		{
+			auto iLayer = i.CurrentItem();
+
+			EXPECT_NE(iLayer.name, "Riss_1");
+			EXPECT_FALSE(iLayer.markForExport);
+			counter++;
+		}
+		EXPECT_EQ(counter, 12);
+	}
+
+	// "Flur" in EG should be changed.
+	{
+		auto upTreeItem = std::make_unique<TreeModel<Layer>::TreeItem>();
+		auto ret = m_TreeModelUnique.GetCopy(fEG, upTreeItem);
+
+		auto m = std::make_unique<TreeModel<Layer>>(move(upTreeItem));
+		auto i = LayerListIterator(*m);
+		int counter = 0;
+		bool rissFound = false;
+		bool somethingMarkForExport = false;
+		for (i.First(); !i.IsDone(); i.Next())
+		{
+			auto iLayer = i.CurrentItem();
+
+			if (iLayer.name == "Riss_1")
+				rissFound = true;
+
+			if (iLayer.markForExport)
+				somethingMarkForExport = true;
+			counter++;
+		}
+		EXPECT_EQ(counter, 13);
+		EXPECT_TRUE(rissFound);
+		EXPECT_TRUE(somethingMarkForExport);
+	}
 }

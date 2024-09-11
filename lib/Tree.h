@@ -26,6 +26,29 @@ struct TreeModel
 public:
 	struct TreeItem
 	{
+		TreeItem() = default;
+		~TreeItem() = default;
+		TreeItem(const TreeItem& other)
+			: m_Item(other.m_Item ? std::make_unique<Item>(*other.m_Item) : nullptr)
+		{
+			m_Children.reserve(other.m_Children.size());
+			for (const auto& child : other.m_Children)
+			{
+				m_Children.push_back(std::make_unique<TreeItem>(*child));
+			}
+		};
+
+		TreeItem& operator=(const TreeItem& other)
+		{
+			if (this != &other)
+			{
+				TreeItem temp(other);
+				std::swap(m_Item, temp.m_Item);
+				std::swap(m_Children, temp.m_Children);
+			}
+			return *this;
+		}
+
 		std::unique_ptr<Item> m_Item;
 		std::vector<std::unique_ptr<TreeItem>> m_Children;
 		bool IsLeaveNode()
@@ -70,6 +93,11 @@ public:
 	TreeModel(const TreeModel& other);
 	TreeModel(const json& j);
 	TreeModel(Item _item);
+	TreeModel(std::unique_ptr<TreeItem>&& treeItem) noexcept
+		: m_treeItem(std::move(treeItem))
+	{
+		m_nullItemPtr = std::make_unique<Item>();
+	};
 	TreeModel& operator=(const TreeModel& other);
 	bool operator==(const TreeModel& other)
 	{
@@ -81,6 +109,31 @@ public:
 	};
 	bool Append(Item _item, Item _parentItem, const bool after = true);
 	Item Get(const size_t);
+
+	bool GetCopy(const Item _item, std::unique_ptr<TreeItem>& ret)
+	{
+		return getRecursive(m_treeItem, _item, ret);
+	};
+
+	bool getRecursive(std::unique_ptr<TreeItem>& _treeItem, const Item _item, std::unique_ptr<TreeItem>& ret)
+	{
+		if (*_treeItem->m_Item == _item)
+		{
+			ret = std::make_unique<TreeItem>(*_treeItem);
+			return true;
+		}
+
+		for (auto& treeItem : _treeItem->m_Children)
+		{
+			if (getRecursive(treeItem, _item, ret))
+			{
+				return true;
+			}
+		}
+
+		return false;
+	};
+
 	std::vector<Item> GetPath(const size_t index);
 	std::unique_ptr<Item>& Get(std::vector<Item> structure);
 	std::unique_ptr<TreeItem>& GetTreeItem()
@@ -171,7 +224,6 @@ template<typename Item>
 TreeModel<Item>::TreeModel(const json& j)
 {
 	m_nullItemPtr = std::make_unique<Item>();
-
 
 	if (!j.is_null() && j.find("item") != j.end())
 	{

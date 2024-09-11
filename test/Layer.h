@@ -6,6 +6,18 @@
 #include <string>
 #include <vector>
 
+// Start for CreateCompressedGuidString()
+//#include <format>
+//#include <stdexcept>
+//#include <windows.h>
+//#include <uuids.h>
+// End for CreateCompressedGuidString()
+
+using namespace std;
+using namespace henn;
+
+//std::string CreateCompressedGuidString();
+
 enum ImageType
 {
 	kMeasuringPoint = 0,
@@ -32,6 +44,7 @@ public:
 	bool markForExport;
 	int customLayer;
 	std::string name;
+	std::string nameUnique;
 };
 
 template <typename BasicJsonType>
@@ -48,6 +61,7 @@ static void to_json(BasicJsonType& j, const Layer& layer)
 					{"headline", layer.headline },
 					{"note", layer.note },
 					{"markForExport", layer.markForExport},
+					{"nameUnique", layer.nameUnique}
 				}
 			}
 	};
@@ -67,6 +81,14 @@ static void from_json(const BasicJsonType& j, Layer& layer)
 		layer.headline = obj["headline"].get<std::string>();
 		layer.note = obj["note"].get<std::string>();
 		layer.markForExport = obj["markForExport"].get<bool>();
+		if (obj.contains("nameUnique"))
+		{
+			layer.nameUnique = obj["nameUnique"].get<std::string>();
+		}
+		else
+		{
+			layer.nameUnique = ""; // Set to empty string if not present
+		}
 	}
 }
 
