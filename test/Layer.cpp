@@ -56,7 +56,7 @@ bool Layer::operator==(const Layer other) const
 	if (name != other.name)
 		return false;
 
-	if (!nameUnique.empty() && nameUnique != other.nameUnique)
+	if (!nameUnique.empty() && !other.nameUnique.empty() && nameUnique != other.nameUnique)
 		return false;
 
 	return true;

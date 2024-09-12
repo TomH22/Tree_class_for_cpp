@@ -10,6 +10,7 @@
                                     "headline": "Grundriss",
                                     "markForExport": false,
                                     "name": "Grundriss",
+                                    "nameUnique": "1lo5Iyn8r1OwY0G4Y6WSPu",
                                     "note": "Dieser Grundriss ist speziell!"
                                 }
                             }
@@ -20,6 +21,7 @@
                                     "headline": "Boden",
                                     "markForExport": false,
                                     "name": "Boden",
+                                    "nameUnique": "15stbg2ov298OAQcSmhT7M",
                                     "note": ""
                                 }
                             }
@@ -30,6 +32,7 @@
                                     "headline": "Decke",
                                     "markForExport": false,
                                     "name": "Decke",
+                                    "nameUnique": "2RPIxV3yHDYwwurgZpl9IB",
                                     "note": ""
                                 }
                             }
@@ -40,7 +43,8 @@
                                     "headline": "Wand 1",
                                     "markForExport": false,
                                     "name": "Wand 1",
-                                    "note": "","nameUnique": "29b8"
+                                    "nameUnique": "1LKUmi8YH23QuQQ$SppiFA",
+                                    "note": ""
                                 }
                             }
                         },
@@ -50,6 +54,7 @@
                                     "headline": "Wand 2",
                                     "markForExport": false,
                                     "name": "Wand 2",
+                                    "nameUnique": "1zqJS5CU5E49rScQhd3Crp",
                                     "note": ""
                                 }
                             }
@@ -60,6 +65,7 @@
                                     "headline": "Wand 3",
                                     "markForExport": false,
                                     "name": "Wand 3",
+                                    "nameUnique": "0yu6J085XCQvqwhz4gi2Un",
                                     "note": ""
                                 }
                             }
@@ -70,6 +76,7 @@
                                     "headline": "Wand 4",
                                     "markForExport": false,
                                     "name": "Wand 4",
+                                    "nameUnique": "2OR502S9bBW9RueRQ1WAgb",
                                     "note": ""
                                 }
                             }
@@ -80,6 +87,7 @@
                                     "headline": "Wand 5",
                                     "markForExport": false,
                                     "name": "Wand 5",
+                                    "nameUnique": "0ZsQAdKKz5gOUMge6LzgkP",
                                     "note": ""
                                 }
                             }
@@ -90,6 +98,7 @@
                                     "headline": "Wand 6",
                                     "markForExport": false,
                                     "name": "Wand 6",
+                                    "nameUnique": "1kITBRqZj3fv8iD0t2duNR",
                                     "note": ""
                                 }
                             }
@@ -100,6 +109,7 @@
                                     "headline": "3D",
                                     "markForExport": false,
                                     "name": "3D",
+                                    "nameUnique": "0ByQlMG9HD89TIJ_RxZGZS",
                                     "note": ""
                                 }
                             }
@@ -110,6 +120,7 @@
                                     "headline": "Ablage",
                                     "markForExport": false,
                                     "name": "Ablage",
+                                    "nameUnique": "1ejc_CADr3Mv3ddyH$Qt2e",
                                     "note": ""
                                 }
                             }
@@ -120,8 +131,8 @@
                             "headline": "Flur",
                             "markForExport": false,
                             "name": "Flur",
-                            "note": "",
-                            "nameUnique": "3bb20cd9"
+                            "nameUnique": "2j9rw6QEz4qwOFA71fsPP4",
+                            "note": ""
                         }
                     }
                 },
@@ -133,6 +144,7 @@
                                     "headline": "Grundriss",
                                     "markForExport": false,
                                     "name": "Grundriss",
+                                    "nameUnique": "1O14wc9f56KvhqqjkDS1Kq",
                                     "note": ""
                                 }
                             }
@@ -143,6 +155,7 @@
                                     "headline": "Boden",
                                     "markForExport": false,
                                     "name": "Boden",
+                                    "nameUnique": "3XLiBvHOD5cANozM6NgpMx",
                                     "note": ""
                                 }
                             }
@@ -153,6 +166,7 @@
                                     "headline": "Decke",
                                     "markForExport": false,
                                     "name": "Decke",
+                                    "nameUnique": "23OP_SYFr5YuZgQ1F$nWHw",
                                     "note": ""
                                 }
                             }
@@ -163,6 +177,7 @@
                                     "headline": "Wand 1",
                                     "markForExport": false,
                                     "name": "Wand 1",
+                                    "nameUnique": "3EU18RRYT7feCwmOjiqcZQ",
                                     "note": ""
                                 }
                             }
@@ -173,6 +188,7 @@
                                     "headline": "Wand 2",
                                     "markForExport": false,
                                     "name": "Wand 2",
+                                    "nameUnique": "1$V6eD1tH6QRDVjDctvOLZ",
                                     "note": ""
                                 }
                             }
@@ -183,6 +199,7 @@
                                     "headline": "Wand 3",
                                     "markForExport": false,
                                     "name": "Wand 3",
+                                    "nameUnique": "35u1j2hfj0luPfokMtMSQJ",
                                     "note": ""
                                 }
                             }
@@ -193,88 +210,7 @@
                                     "headline": "Wand 4",
                                     "markForExport": false,
                                     "name": "Wand 4",
-                                    "note": ""
-                                }
-                            }
-                        }
-                    ],
-                    "item": {
-                        "layer": {
-                            "headline": "Toilette",
-                            "markForExport": false,
-                            "name": "Toilette",
-                            "note": "","nameUnique": "a626"
-                        }
-                    }
-                },
-                {
-                    "children": [
-                        {
-                            "item": {
-                                "layer": {
-                                    "headline": "Grundriss",
-                                    "markForExport": false,
-                                    "name": "Grundriss",
-                                    "note": ""
-                                }
-                            }
-                        },
-                        {
-                            "item": {
-                                "layer": {
-                                    "headline": "Boden",
-                                    "markForExport": false,
-                                    "name": "Boden",
-                                    "note": ""
-                                }
-                            }
-                        },
-                        {
-                            "item": {
-                                "layer": {
-                                    "headline": "Decke",
-                                    "markForExport": false,
-                                    "name": "Decke",
-                                    "note": ""
-                                }
-                            }
-                        },
-                        {
-                            "item": {
-                                "layer": {
-                                    "headline": "Wand 1",
-                                    "markForExport": false,
-                                    "name": "Wand 1",
-                                    "note": ""
-                                }
-                            }
-                        },
-                        {
-                            "item": {
-                                "layer": {
-                                    "headline": "Wand 2",
-                                    "markForExport": false,
-                                    "name": "Wand 2",
-                                    "note": ""
-                                }
-                            }
-                        },
-                        {
-                            "item": {
-                                "layer": {
-                                    "headline": "Wand 3",
-                                    "markForExport": false,
-                                    "name": "Wand 3",
-                                    "note": ""
-                                }
-                            }
-                        },
-                        {
-                            "item": {
-                                "layer": {
-                                    "headline": "Wand 4",
-                                    "markForExport": false,
-                                    "name": "Wand 4",
+                                    "nameUnique": "2mw4LfC0DDAgQ7mvyzn71w",
                                     "note": ""
                                 }
                             }
@@ -285,6 +221,7 @@
                                     "headline": "Wand 5",
                                     "markForExport": false,
                                     "name": "Wand 5",
+                                    "nameUnique": "2NJ9lGALXF8ugZLQdk6sKL",
                                     "note": ""
                                 }
                             }
@@ -295,6 +232,7 @@
                                     "headline": "Wand 6",
                                     "markForExport": false,
                                     "name": "Wand 6",
+                                    "nameUnique": "0d8PyImp57JxPZ7qxp1zlJ",
                                     "note": ""
                                 }
                             }
@@ -302,33 +240,23 @@
                     ],
                     "item": {
                         "layer": {
-                            "headline": "Eingang",
+                            "headline": "Bewirtschaftuntsraum",
                             "markForExport": false,
-                            "name": "Eingang",
+                            "name": "Bewirtschaftuntsraum",
+                            "nameUnique": "3gvVZb$CfES8JNWXqbTjy5",
                             "note": ""
                         }
                     }
-                }
-            ],
-            "item": {
-                "layer": {
-                    "headline": "KG",
-                    "markForExport": true,
-                    "name": "KG",
-                    "note": "","nameUnique": "471d"
-                }
-            }
-        },
-        {
-            "children": [
+                },
                 {
-                        "children": [                        
-						{
+                    "children": [
+                        {
                             "item": {
                                 "layer": {
                                     "headline": "Grundriss",
                                     "markForExport": false,
                                     "name": "Grundriss",
+                                    "nameUnique": "3Y5RbkPTH1iB$2EP2ci_NS",
                                     "note": ""
                                 }
                             }
@@ -339,6 +267,7 @@
                                     "headline": "Boden",
                                     "markForExport": false,
                                     "name": "Boden",
+                                    "nameUnique": "1MZu3LugHEleaZfVazGJtb",
                                     "note": ""
                                 }
                             }
@@ -349,6 +278,7 @@
                                     "headline": "Decke",
                                     "markForExport": false,
                                     "name": "Decke",
+                                    "nameUnique": "03UF1Yb7r82ebypW4WAXld",
                                     "note": ""
                                 }
                             }
@@ -359,7 +289,8 @@
                                     "headline": "Wand 1",
                                     "markForExport": false,
                                     "name": "Wand 1",
-                                    "note": "","nameUnique": "46a1"
+                                    "nameUnique": "0yGrnoAM5AleGjsYJYgJSO",
+                                    "note": ""
                                 }
                             }
                         },
@@ -369,6 +300,7 @@
                                     "headline": "Wand 2",
                                     "markForExport": false,
                                     "name": "Wand 2",
+                                    "nameUnique": "2TDLE8QtT4U8RRPIR6AbPn",
                                     "note": ""
                                 }
                             }
@@ -379,6 +311,7 @@
                                     "headline": "Wand 3",
                                     "markForExport": false,
                                     "name": "Wand 3",
+                                    "nameUnique": "2kKweTMoz3Jv2N26_$IZvH",
                                     "note": ""
                                 }
                             }
@@ -389,16 +322,31 @@
                                     "headline": "Wand 4",
                                     "markForExport": false,
                                     "name": "Wand 4",
+                                    "nameUnique": "2PG9mVEdXAUOhyepVGn8L$",
                                     "note": ""
                                 }
                             }
-                        },
+                        }
+                    ],
+                    "item": {
+                        "layer": {
+                            "headline": "Gefangenenraum",
+                            "markForExport": false,
+                            "name": "Gefangenenraum",
+                            "nameUnique": "2M0VXJ2ej2NRvZsaNAqqX9",
+                            "note": ""
+                        }
+                    }
+                },
+                {
+                    "children": [
                         {
                             "item": {
                                 "layer": {
                                     "headline": "Grundriss",
                                     "markForExport": false,
                                     "name": "Grundriss",
+                                    "nameUnique": "3vVxA3zl1EVwwWeTQUykPr",
                                     "note": ""
                                 }
                             }
@@ -406,9 +354,10 @@
                         {
                             "item": {
                                 "layer": {
-                                    "headline": "Absatz",
+                                    "headline": "Boden",
                                     "markForExport": false,
-                                    "name": "Absatz",
+                                    "name": "Boden",
+                                    "nameUnique": "1EszuLZxn9ZAZGZLfQ$3KB",
                                     "note": ""
                                 }
                             }
@@ -416,9 +365,144 @@
                         {
                             "item": {
                                 "layer": {
-                                    "headline": "Kannte",
+                                    "headline": "Decke",
                                     "markForExport": false,
-                                    "name": "Kannte",
+                                    "name": "Decke",
+                                    "nameUnique": "3KRI16A$XBlRSfPCb_0MvJ",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Wand 1",
+                                    "markForExport": false,
+                                    "name": "Wand 1",
+                                    "nameUnique": "0O8vGSxUL4f93XyNSwPDRn",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Wand 2",
+                                    "markForExport": false,
+                                    "name": "Wand 2",
+                                    "nameUnique": "2zgE2xA_D49eD995lZjZL_",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Wand 3",
+                                    "markForExport": false,
+                                    "name": "Wand 3",
+                                    "nameUnique": "0HCbm5HiTFoB8hT4eZuwuX",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Wand 4",
+                                    "markForExport": false,
+                                    "name": "Wand 4",
+                                    "nameUnique": "3iNAfKC$D8Z9JLhV1QXfL0",
+                                    "note": ""
+                                }
+                            }
+                        }
+                    ],
+                    "item": {
+                        "layer": {
+                            "headline": "Toilette",
+                            "markForExport": false,
+                            "name": "Toilette",
+                            "nameUnique": "3SiNGUGLj2bwcbMHfvngcJ",
+                            "note": ""
+                        }
+                    }
+                },
+                {
+                    "children": [
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Grundriss",
+                                    "markForExport": false,
+                                    "name": "Grundriss",
+                                    "nameUnique": "0XKthqQyL09PlPVkqa4Tfw",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Boden",
+                                    "markForExport": false,
+                                    "name": "Boden",
+                                    "nameUnique": "0SivujnJ1AH8VPPLCrH79z",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Decke",
+                                    "markForExport": false,
+                                    "name": "Decke",
+                                    "nameUnique": "39$12DDcrBqONyRf_aZ6Kp",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Wand 1",
+                                    "markForExport": false,
+                                    "name": "Wand 1",
+                                    "nameUnique": "2TtRzMY$D2ifkftwF2UNcv",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Wand 2",
+                                    "markForExport": false,
+                                    "name": "Wand 2",
+                                    "nameUnique": "3HUSzI6lr0ohG4h0lPdZdO",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Wand 3",
+                                    "markForExport": false,
+                                    "name": "Wand 3",
+                                    "nameUnique": "2n$8ZYGTHC_hRoU88bZ1TP",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Wand 4",
+                                    "markForExport": false,
+                                    "name": "Wand 4",
+                                    "nameUnique": "0Nlyv2icD2oe92c9NMwW5w",
                                     "note": ""
                                 }
                             }
@@ -429,6 +513,7 @@
                                     "headline": "3D",
                                     "markForExport": false,
                                     "name": "3D",
+                                    "nameUnique": "00ExdFceTD$v1fcrDwi9Dt",
                                     "note": ""
                                 }
                             }
@@ -436,21 +521,23 @@
                     ],
                     "item": {
                         "layer": {
-                            "headline": "Flur",
+                            "headline": "Bad",
                             "markForExport": false,
-                            "name": "Flur",
-                            "note": "","nameUnique": "ad8f"
+                            "name": "Bad",
+                            "nameUnique": "1wDpWZVm9EjBbzfOEpJVDF",
+                            "note": ""
                         }
                     }
                 },
                 {
-                    "children": [                        
-						{
+                    "children": [
+                        {
                             "item": {
                                 "layer": {
                                     "headline": "Grundriss",
                                     "markForExport": false,
                                     "name": "Grundriss",
+                                    "nameUnique": "3rG7r560n8VRLjcVU9Rckg",
                                     "note": ""
                                 }
                             }
@@ -461,6 +548,7 @@
                                     "headline": "Boden",
                                     "markForExport": false,
                                     "name": "Boden",
+                                    "nameUnique": "3s82gKFI16zBt9sUmWtI9Q",
                                     "note": ""
                                 }
                             }
@@ -471,6 +559,7 @@
                                     "headline": "Decke",
                                     "markForExport": false,
                                     "name": "Decke",
+                                    "nameUnique": "3BBRpZHv1Bkg_JorXBHIEi",
                                     "note": ""
                                 }
                             }
@@ -481,6 +570,7 @@
                                     "headline": "Wand 1",
                                     "markForExport": false,
                                     "name": "Wand 1",
+                                    "nameUnique": "3hPFWaFQn4If_z3tFWHD77",
                                     "note": ""
                                 }
                             }
@@ -491,6 +581,7 @@
                                     "headline": "Wand 2",
                                     "markForExport": false,
                                     "name": "Wand 2",
+                                    "nameUnique": "235fQgOGL76wg7OWhdiA_R",
                                     "note": ""
                                 }
                             }
@@ -501,6 +592,7 @@
                                     "headline": "Wand 3",
                                     "markForExport": false,
                                     "name": "Wand 3",
+                                    "nameUnique": "2FxxuPQjD9SBb1yjTCAc7h",
                                     "note": ""
                                 }
                             }
@@ -511,16 +603,683 @@
                                     "headline": "Wand 4",
                                     "markForExport": false,
                                     "name": "Wand 4",
+                                    "nameUnique": "1agqJ5tKHEyQxPahFrcmCY",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Wand 5",
+                                    "markForExport": false,
+                                    "name": "Wand 5",
+                                    "nameUnique": "3m9otMNLfCxvgy3vMYKYU_",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Wand 6",
+                                    "markForExport": false,
+                                    "name": "Wand 6",
+                                    "nameUnique": "31qT6diEb5qg2EX2xeaVs4",
                                     "note": ""
                                 }
                             }
                         }
-                    ],                    
+                    ],
                     "item": {
                         "layer": {
                             "headline": "Eingang",
                             "markForExport": false,
                             "name": "Eingang",
+                            "nameUnique": "2TedaNUBr2TP9unaJLUlX2",
+                            "note": ""
+                        }
+                    }
+                }
+            ],
+            "item": {
+                "layer": {
+                    "headline": "KG",
+                    "markForExport": true,
+                    "name": "KG",
+                    "nameUnique": "1Mdo70w4f5nuiyKunWpKwc",
+                    "note": ""
+                }
+            }
+        },
+        {
+            "children": [
+                {
+                    "children": [
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Grundriss",
+                                    "markForExport": false,
+                                    "name": "Grundriss",
+                                    "nameUnique": "2tNG2Pjyv87RqQxHujY1cE",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Boden",
+                                    "markForExport": false,
+                                    "name": "Boden",
+                                    "nameUnique": "1CMdLOUDv3Ffs3PRVhuK7m",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Decke",
+                                    "markForExport": false,
+                                    "name": "Decke",
+                                    "nameUnique": "2TCIxCKKP0B9NK3pNMzGKZ",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Wand 1",
+                                    "markForExport": false,
+                                    "name": "Wand 1",
+                                    "nameUnique": "1MXS52DvXCpflAmhZgjNdQ",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Wand 2",
+                                    "markForExport": false,
+                                    "name": "Wand 2",
+                                    "nameUnique": "3oNGmiMjX7Mh3Wekk5rtvs",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Wand 3",
+                                    "markForExport": false,
+                                    "name": "Wand 3",
+                                    "nameUnique": "1zWDDGxxzEnxZPdmHIC7nP",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Wand 4",
+                                    "markForExport": false,
+                                    "name": "Wand 4",
+                                    "nameUnique": "1FJBGWac15HwRzaZkvYPK2",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "3D",
+                                    "markForExport": false,
+                                    "name": "3D",
+                                    "nameUnique": "1hHdwxYw53iPEGFZJ5Fw25",
+                                    "note": ""
+                                }
+                            }
+                        }
+                    ],
+                    "item": {
+                        "layer": {
+                            "headline": "Hinterzimmer",
+                            "markForExport": false,
+                            "name": "Hinterzimmer",
+                            "nameUnique": "0Y4uP3wB9CtOnTTwjiBZQz",
+                            "note": ""
+                        }
+                    }
+                },
+                {
+                    "children": [
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Grundriss",
+                                    "markForExport": false,
+                                    "name": "Grundriss",
+                                    "nameUnique": "02jQ8Yab55$xqfOfI6t4sg",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Boden",
+                                    "markForExport": false,
+                                    "name": "Boden",
+                                    "nameUnique": "1yEwYcqon7OOjquS$MsPjp",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Decke",
+                                    "markForExport": false,
+                                    "name": "Decke",
+                                    "nameUnique": "2Fibgefcb8W8ls8oMa$wcQ",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Wand 1",
+                                    "markForExport": false,
+                                    "name": "Wand 1",
+                                    "nameUnique": "3fpfz59ED8EBPnE_XQBnfP",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Wand 2",
+                                    "markForExport": false,
+                                    "name": "Wand 2",
+                                    "nameUnique": "31GkqP_FLEwhITIqO4nUk9",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Wand 3",
+                                    "markForExport": false,
+                                    "name": "Wand 3",
+                                    "nameUnique": "2DBHFf_0LE6wiK0vcA6wUn",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Wand 4",
+                                    "markForExport": false,
+                                    "name": "Wand 4",
+                                    "nameUnique": "3YApBUrn5C79xWXmS3rf5h",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Wand 5",
+                                    "markForExport": false,
+                                    "name": "Wand 5",
+                                    "nameUnique": "2ybV663j1CGBBudrRsa4YZ",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Wand 6",
+                                    "markForExport": false,
+                                    "name": "Wand 6",
+                                    "nameUnique": "0jYZRmHXr06Az4jyiwg$XE",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "3D",
+                                    "markForExport": false,
+                                    "name": "3D",
+                                    "nameUnique": "0zZgVcbGn2kwsqd_2UqI37",
+                                    "note": ""
+                                }
+                            }
+                        }
+                    ],
+                    "item": {
+                        "layer": {
+                            "headline": "Küche",
+                            "markForExport": false,
+                            "name": "Küche",
+                            "nameUnique": "1VSt4KT1v85un_gkvXk1LQ",
+                            "note": ""
+                        }
+                    }
+                },
+                {
+                    "children": [
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Grundriss",
+                                    "markForExport": false,
+                                    "name": "Grundriss",
+                                    "nameUnique": "2LDm5vxg5EBgEqWY0BRYhe",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Boden",
+                                    "markForExport": false,
+                                    "name": "Boden",
+                                    "nameUnique": "0f3pt8k0b8qB4M4gj_bRab",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Decke",
+                                    "markForExport": false,
+                                    "name": "Decke",
+                                    "nameUnique": "1GM6w9PKH7S9rHYorp2hJ2",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Wand 1",
+                                    "markForExport": false,
+                                    "name": "Wand 1",
+                                    "nameUnique": "1atQyUFHDC0uRSuaVWEb$E",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Wand 2",
+                                    "markForExport": false,
+                                    "name": "Wand 2",
+                                    "nameUnique": "1ldX__rLT3lASQCetjOI2j",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Wand 3",
+                                    "markForExport": false,
+                                    "name": "Wand 3",
+                                    "nameUnique": "3ifbeUHafBpQFcp7V1p4Wr",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Wand 4",
+                                    "markForExport": false,
+                                    "name": "Wand 4",
+                                    "nameUnique": "0Dvwq9c3900gIBO70JyyR9",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "3D",
+                                    "markForExport": false,
+                                    "name": "3D",
+                                    "nameUnique": "3LJsSHUkH8AxRMKYYeESwl",
+                                    "note": ""
+                                }
+                            }
+                        }
+                    ],
+                    "item": {
+                        "layer": {
+                            "headline": "Flur",
+                            "markForExport": false,
+                            "name": "Flur",
+                            "nameUnique": "1dVWiUg1n5Nv4GHzMi$1SX",
+                            "note": ""
+                        }
+                    }
+                },
+                {
+                    "children": [
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Grundriss",
+                                    "markForExport": false,
+                                    "name": "Grundriss",
+                                    "nameUnique": "0dZ6FsvmbFevmpGuH9gV6W",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Boden",
+                                    "markForExport": false,
+                                    "name": "Boden",
+                                    "nameUnique": "3GwHT0BuHCER7_U4cZV_Zb",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Decke",
+                                    "markForExport": false,
+                                    "name": "Decke",
+                                    "nameUnique": "1x5bXPpk57oPs6KLFxL3wM",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Wand 1",
+                                    "markForExport": false,
+                                    "name": "Wand 1",
+                                    "nameUnique": "0cR8RSnin9CulTMz5VywFe",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Wand 2",
+                                    "markForExport": false,
+                                    "name": "Wand 2",
+                                    "nameUnique": "17WjxcB51FcO3MRKhP3RaV",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Wand 3",
+                                    "markForExport": false,
+                                    "name": "Wand 3",
+                                    "nameUnique": "2J_DEgwVv9ffoeSzQ4_Ov3",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Wand 4",
+                                    "markForExport": false,
+                                    "name": "Wand 4",
+                                    "nameUnique": "02mZb2OufCFxwM1nRtlu_2",
+                                    "note": ""
+                                }
+                            }
+                        }
+                    ],
+                    "item": {
+                        "layer": {
+                            "headline": "Eingang",
+                            "markForExport": false,
+                            "name": "Eingang",
+                            "nameUnique": "3_YK16GhL9bu3PBKUWiRHK",
+                            "note": ""
+                        }
+                    }
+                },
+                {
+                    "children": [
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Grundriss",
+                                    "markForExport": false,
+                                    "name": "Grundriss",
+                                    "nameUnique": "1B_t$fn9j2lOPlLhh4vQc$",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Boden",
+                                    "markForExport": false,
+                                    "name": "Boden",
+                                    "nameUnique": "3uM5EhGcjCJgzI5SmoHKS9",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Decke",
+                                    "markForExport": false,
+                                    "name": "Decke",
+                                    "nameUnique": "1RS5iPYrH0oxv280oUEzrK",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Wand 1",
+                                    "markForExport": false,
+                                    "name": "Wand 1",
+                                    "nameUnique": "0Z9B1kr7j8SObUcl3mBxYM",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Wand 2",
+                                    "markForExport": false,
+                                    "name": "Wand 2",
+                                    "nameUnique": "1xZaTjLjX68gC0Y45z0Fha",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Wand 3",
+                                    "markForExport": false,
+                                    "name": "Wand 3",
+                                    "nameUnique": "0fr4ixC690rAHa5b25VTXt",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Wand 4",
+                                    "markForExport": false,
+                                    "name": "Wand 4",
+                                    "nameUnique": "2HfO$etmn6Oxc8QMi$qW$Q",
+                                    "note": ""
+                                }
+                            }
+                        }
+                    ],
+                    "item": {
+                        "layer": {
+                            "headline": "Schuhraum",
+                            "markForExport": false,
+                            "name": "Schuhraum",
+                            "nameUnique": "3y7zu$lCT6mxm71jABq0u2",
+                            "note": ""
+                        }
+                    }
+                },
+                {
+                    "children": [
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Grundriss",
+                                    "markForExport": false,
+                                    "name": "Grundriss",
+                                    "nameUnique": "0WDtJtDs9FPgBKN0ddkNRm",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Boden",
+                                    "markForExport": false,
+                                    "name": "Boden",
+                                    "nameUnique": "3OvEs03J99KftzxQrMNg8y",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Decke",
+                                    "markForExport": false,
+                                    "name": "Decke",
+                                    "nameUnique": "2VBq3w0Cn9lf3ozgEaXDIF",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Wand 1",
+                                    "markForExport": false,
+                                    "name": "Wand 1",
+                                    "nameUnique": "1gHxdQCh99AOjLXe6N$1PF",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Wand 2",
+                                    "markForExport": false,
+                                    "name": "Wand 2",
+                                    "nameUnique": "2yH1SrxLTEleUPQXCmTDRN",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Wand 3",
+                                    "markForExport": false,
+                                    "name": "Wand 3",
+                                    "nameUnique": "1ENRmS9rv43P24_qR7fqUN",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Wand 4",
+                                    "markForExport": false,
+                                    "name": "Wand 4",
+                                    "nameUnique": "0lQZowcCvC6fioXOuks_S1",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "3D",
+                                    "markForExport": false,
+                                    "name": "3D",
+                                    "nameUnique": "3qoARSPNr0hx9nrLq7Ipqb",
+                                    "note": ""
+                                }
+                            }
+                        }
+                    ],
+                    "item": {
+                        "layer": {
+                            "headline": "Stube",
+                            "markForExport": false,
+                            "name": "Stube",
+                            "nameUnique": "1GrRxYdqDEVxI1LZgTDxox",
+                            "note": ""
+                        }
+                    }
+                },
+                {
+                    "children": [
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Grundriss",
+                                    "markForExport": false,
+                                    "name": "Grundriss",
+                                    "nameUnique": "0MSLRKodj7eOSmaMQZptKN",
+                                    "note": ""
+                                }
+                            }
+                        }
+                    ],
+                    "item": {
+                        "layer": {
+                            "headline": "Garage",
+                            "markForExport": false,
+                            "name": "Garage",
+                            "nameUnique": "2oxSjNhwD75ApsaM4$$Wl2",
                             "note": ""
                         }
                     }
@@ -531,7 +1290,1698 @@
                     "headline": "EG",
                     "markForExport": false,
                     "name": "EG",
-                    "note": "","nameUnique": "5158635272ee"
+                    "nameUnique": "3Zbji619z74PSwzRSx1AOB",
+                    "note": ""
+                }
+            }
+        },
+        {
+            "children": [
+                {
+                    "children": [
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Grundriss",
+                                    "markForExport": false,
+                                    "name": "Grundriss",
+                                    "nameUnique": "02UvkbWUX3dul7NuFMq2q3",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Boden",
+                                    "markForExport": false,
+                                    "name": "Boden",
+                                    "nameUnique": "0UboxjcBDFdRlmBDXdH_5f",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Decke",
+                                    "markForExport": false,
+                                    "name": "Decke",
+                                    "nameUnique": "0a4hO_WfTADP8UKQdinK7M",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Wand 1",
+                                    "markForExport": false,
+                                    "name": "Wand 1",
+                                    "nameUnique": "3x9SsGlZD5ER_Ycft2G7sI",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Wand 2",
+                                    "markForExport": false,
+                                    "name": "Wand 2",
+                                    "nameUnique": "14KYvk$uf2MBbjA0kBtZWu",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Wand 3",
+                                    "markForExport": false,
+                                    "name": "Wand 3",
+                                    "nameUnique": "1e1FPeP3r7Lfc2iZW28UR1",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Wand 4",
+                                    "markForExport": false,
+                                    "name": "Wand 4",
+                                    "nameUnique": "1Wcd1osdv8n9p$DluBHkX3",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "3D",
+                                    "markForExport": false,
+                                    "name": "3D",
+                                    "nameUnique": "2IpQh7DQPC4wUPih6VIGcd",
+                                    "note": ""
+                                }
+                            }
+                        }
+                    ],
+                    "item": {
+                        "layer": {
+                            "headline": "ObenRechts",
+                            "markForExport": false,
+                            "name": "ObenRechts",
+                            "nameUnique": "0me9BPsY1EjeLL9fH5Nil0",
+                            "note": ""
+                        }
+                    }
+                },
+                {
+                    "children": [
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Grundriss",
+                                    "markForExport": false,
+                                    "name": "Grundriss",
+                                    "nameUnique": "0NgXb$AVH3OfN80u4e3Y97",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Boden",
+                                    "markForExport": false,
+                                    "name": "Boden",
+                                    "nameUnique": "1X10BD_7PCEv2H6ya80vGj",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Decke",
+                                    "markForExport": false,
+                                    "name": "Decke",
+                                    "nameUnique": "3vvty_QqjAGwj9eJJWMCIy",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Wand 1",
+                                    "markForExport": false,
+                                    "name": "Wand 1",
+                                    "nameUnique": "3eQ_iGvX11KPN3JRrIEqiP",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Wand 2",
+                                    "markForExport": false,
+                                    "name": "Wand 2",
+                                    "nameUnique": "0yaCi5WLH7vQEDOsMZleJg",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Wand 3",
+                                    "markForExport": false,
+                                    "name": "Wand 3",
+                                    "nameUnique": "3i1PO8ouX9cAw3HRZ7$My9",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Wand 4",
+                                    "markForExport": false,
+                                    "name": "Wand 4",
+                                    "nameUnique": "2G303Nvnn2_AZsZVnrxw80",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Dachschräge 1",
+                                    "markForExport": false,
+                                    "name": "Dachschräge 1",
+                                    "nameUnique": "1t7VrSAk5D_wAtJS67I$ni",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "3D",
+                                    "markForExport": false,
+                                    "name": "3D",
+                                    "nameUnique": "2Q_k87bNv2OhCoaYq9$Bd1",
+                                    "note": ""
+                                }
+                            }
+                        }
+                    ],
+                    "item": {
+                        "layer": {
+                            "headline": "Flur",
+                            "markForExport": false,
+                            "name": "Flur",
+                            "nameUnique": "3uOfCstrr6Dfa9GCKjU664",
+                            "note": ""
+                        }
+                    }
+                },
+                {
+                    "children": [
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Grundriss",
+                                    "markForExport": false,
+                                    "name": "Grundriss",
+                                    "nameUnique": "1tHCwwTJf3OfdC79dEc3yt",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Boden",
+                                    "markForExport": false,
+                                    "name": "Boden",
+                                    "nameUnique": "3b6HF_qU9DJgczJK8vkVN2",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Decke",
+                                    "markForExport": false,
+                                    "name": "Decke",
+                                    "nameUnique": "28TLhhxcj8LgZDqf6RRs6T",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Wand 1",
+                                    "markForExport": false,
+                                    "name": "Wand 1",
+                                    "nameUnique": "0UZPmxkH1Cce_Lf0V2fiYt",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Wand 2",
+                                    "markForExport": false,
+                                    "name": "Wand 2",
+                                    "nameUnique": "0V13AtHJn3P8fsUUErKfK6",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Wand 3",
+                                    "markForExport": false,
+                                    "name": "Wand 3",
+                                    "nameUnique": "0gZ5ErrWL5wPLNwtmJ7_Um",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Wand 4",
+                                    "markForExport": false,
+                                    "name": "Wand 4",
+                                    "nameUnique": "3W2_Naxs9Dmf9BPDJ$9xvt",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Wand 5",
+                                    "markForExport": false,
+                                    "name": "Wand 5",
+                                    "nameUnique": "3rvyOdF951Y8ltTXJ2h7AA",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Wand 6",
+                                    "markForExport": false,
+                                    "name": "Wand 6",
+                                    "nameUnique": "07itTsZOT5ueiDrdHHAmga",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "3D",
+                                    "markForExport": false,
+                                    "name": "3D",
+                                    "nameUnique": "3htchL5wf3fvnRLWqhnKyt",
+                                    "note": ""
+                                }
+                            }
+                        }
+                    ],
+                    "item": {
+                        "layer": {
+                            "headline": "Geradeaus",
+                            "markForExport": false,
+                            "name": "Geradeaus",
+                            "nameUnique": "03K0i9W9P6z9iU_rYwdkEy",
+                            "note": ""
+                        }
+                    }
+                },
+                {
+                    "children": [
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Grundriss",
+                                    "markForExport": false,
+                                    "name": "Grundriss",
+                                    "nameUnique": "0MuiMnkSnC6PLoWowp$FdI",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Boden",
+                                    "markForExport": false,
+                                    "name": "Boden",
+                                    "nameUnique": "2$D0GI039F48ilu0tuY8Es",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Decke",
+                                    "markForExport": false,
+                                    "name": "Decke",
+                                    "nameUnique": "2GVXvPBUT8X9xwZPlgOjue",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Wand 1",
+                                    "markForExport": false,
+                                    "name": "Wand 1",
+                                    "nameUnique": "1PvI0KETb6Qe6_hmegXtQ7",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Wand 2",
+                                    "markForExport": false,
+                                    "name": "Wand 2",
+                                    "nameUnique": "0WYUY6UfLAohcqI61YybVR",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Wand 3",
+                                    "markForExport": false,
+                                    "name": "Wand 3",
+                                    "nameUnique": "0YizOTCSX9uvs7W16LQUIP",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Wand 4",
+                                    "markForExport": false,
+                                    "name": "Wand 4",
+                                    "nameUnique": "2upqo$ZAfBCQolfCOKp8So",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Dachschräge 1",
+                                    "markForExport": false,
+                                    "name": "Dachschräge 1",
+                                    "nameUnique": "2TgVM$u31E4Qi_IWfzWEcj",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "3D",
+                                    "markForExport": false,
+                                    "name": "3D",
+                                    "nameUnique": "0JGzN8rN92CRS1WgDkZ5X1",
+                                    "note": ""
+                                }
+                            }
+                        }
+                    ],
+                    "item": {
+                        "layer": {
+                            "headline": "Geraudeaus_hinten",
+                            "markForExport": false,
+                            "name": "Geraudeaus_hinten",
+                            "nameUnique": "0GbUopAO19mg46E8meqZMf",
+                            "note": ""
+                        }
+                    }
+                }
+            ],
+            "item": {
+                "layer": {
+                    "headline": "OG",
+                    "markForExport": false,
+                    "name": "OG",
+                    "nameUnique": "1PDUFrPYX1n9q7MC7TIl7N",
+                    "note": ""
+                }
+            }
+        },
+        {
+            "children": [
+                {
+                    "children": [
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Grundriss",
+                                    "markForExport": false,
+                                    "name": "Grundriss",
+                                    "nameUnique": "2KhDECprzAsgFrbU_bIt$9",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Boden",
+                                    "markForExport": false,
+                                    "name": "Boden",
+                                    "nameUnique": "3hCBk72QT7PfFtw8xC5v2Q",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Decke",
+                                    "markForExport": false,
+                                    "name": "Decke",
+                                    "nameUnique": "2jfCNYCrvAOBtyGhuUcX6t",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Wand 1",
+                                    "markForExport": false,
+                                    "name": "Wand 1",
+                                    "nameUnique": "3UxLo7Ocn1eRF94auawyTz",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Wand 2",
+                                    "markForExport": false,
+                                    "name": "Wand 2",
+                                    "nameUnique": "0NjvJigVH8AAor4FqBB8s0",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Wand 3",
+                                    "markForExport": false,
+                                    "name": "Wand 3",
+                                    "nameUnique": "3wmkrb4E998OeNe0qvh8hU",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Wand 4",
+                                    "markForExport": false,
+                                    "name": "Wand 4",
+                                    "nameUnique": "0qBC3pDe9EshJbzET6Bj8J",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "3D",
+                                    "markForExport": false,
+                                    "name": "3D",
+                                    "nameUnique": "1nX0T1wsT0XuLpw_Bv1xiN",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Dachschräge 1",
+                                    "markForExport": false,
+                                    "name": "Dachschräge 1",
+                                    "nameUnique": "096b7P8j90tfGZMNwM1cSp",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Dachschräge 2",
+                                    "markForExport": false,
+                                    "name": "Dachschräge 2",
+                                    "nameUnique": "166jXwdXX2D9UMJDv0mC9e",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Dachschräge 3",
+                                    "markForExport": false,
+                                    "name": "Dachschräge 3",
+                                    "nameUnique": "27qzOoq8H0MuVljFlW7Tma",
+                                    "note": ""
+                                }
+                            }
+                        }
+                    ],
+                    "item": {
+                        "layer": {
+                            "headline": "Vorderraum",
+                            "markForExport": false,
+                            "name": "Vorderraum",
+                            "nameUnique": "2_PeNze7L7_RX4nC8o7QWl",
+                            "note": ""
+                        }
+                    }
+                },
+                {
+                    "children": [
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Grundriss",
+                                    "markForExport": false,
+                                    "name": "Grundriss",
+                                    "nameUnique": "3qAPc_vmT3JPT_FY3XVh93",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Boden",
+                                    "markForExport": false,
+                                    "name": "Boden",
+                                    "nameUnique": "02EQo7c6X8RQYhhC_ojNvA",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Decke",
+                                    "markForExport": false,
+                                    "name": "Decke",
+                                    "nameUnique": "2tC40inP11HuAcq9MnEwIy",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Wand 1",
+                                    "markForExport": false,
+                                    "name": "Wand 1",
+                                    "nameUnique": "3mR86ATU9Cp82agx_t0Uvj",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Wand 2",
+                                    "markForExport": false,
+                                    "name": "Wand 2",
+                                    "nameUnique": "2D2Co3y657M9gM6jQUuPOv",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Wand 3",
+                                    "markForExport": false,
+                                    "name": "Wand 3",
+                                    "nameUnique": "3WROoX8O57P9Q3Ih2KFrJn",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Wand 4",
+                                    "markForExport": false,
+                                    "name": "Wand 4",
+                                    "nameUnique": "0oLWPQZ910YA7u7bPfOqv1",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Dachschräge 1",
+                                    "markForExport": false,
+                                    "name": "Dachschräge 1",
+                                    "nameUnique": "1Ohm9D3ybAvPSl1unn0aeY",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Dachschräge 2",
+                                    "markForExport": false,
+                                    "name": "Dachschräge 2",
+                                    "nameUnique": "004hRhFU1B7Al_$16kqqJP",
+                                    "note": ""
+                                }
+                            }
+                        }
+                    ],
+                    "item": {
+                        "layer": {
+                            "headline": "Hinterraum",
+                            "markForExport": false,
+                            "name": "Hinterraum",
+                            "nameUnique": "2_QEp7EkH8wReUE$ipRzVh",
+                            "note": ""
+                        }
+                    }
+                }
+            ],
+            "item": {
+                "layer": {
+                    "headline": "DG",
+                    "markForExport": false,
+                    "name": "DG",
+                    "nameUnique": "2KWJbC6aj5aeleSWRBGieU",
+                    "note": ""
+                }
+            }
+        },
+        {
+            "children": [
+                {
+                    "children": [
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Ortbetontkern",
+                                    "markForExport": false,
+                                    "name": "Ortbetontkern",
+                                    "nameUnique": "1cCdXTG5j7e9vxRDmBhN3a",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Stufenhöhen",
+                                    "markForExport": false,
+                                    "name": "Stufenhöhen",
+                                    "nameUnique": "1ryzexNsj2YgCKf$ISMLiE",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "children": [
+                                {
+                                    "children": [
+                                        {
+                                            "item": {
+                                                "layer": {
+                                                    "headline": "Stufe 1",
+                                                    "markForExport": false,
+                                                    "name": "Stufe 1",
+                                                    "nameUnique": "11pJ6EfHj9j9XrM3ISm0u5",
+                                                    "note": ""
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "item": {
+                                                "layer": {
+                                                    "headline": "Stufe 2",
+                                                    "markForExport": false,
+                                                    "name": "Stufe 2",
+                                                    "nameUnique": "3e0gSloJz75xKRHUZLsSJw",
+                                                    "note": ""
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "item": {
+                                                "layer": {
+                                                    "headline": "Stufe 3",
+                                                    "markForExport": false,
+                                                    "name": "Stufe 3",
+                                                    "nameUnique": "0aDEOlTPr128Ssu0e$STD0",
+                                                    "note": ""
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "item": {
+                                                "layer": {
+                                                    "headline": "Stufe 4",
+                                                    "markForExport": false,
+                                                    "name": "Stufe 4",
+                                                    "nameUnique": "3Sjltpq8f54vXvS8vNxmax",
+                                                    "note": ""
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "item": {
+                                                "layer": {
+                                                    "headline": "Stufe 5",
+                                                    "markForExport": false,
+                                                    "name": "Stufe 5",
+                                                    "nameUnique": "1yMriGHyb8zgQqsAFNvLze",
+                                                    "note": ""
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "item": {
+                                                "layer": {
+                                                    "headline": "Stufe 6",
+                                                    "markForExport": false,
+                                                    "name": "Stufe 6",
+                                                    "nameUnique": "02rORDVur6rhPSD$bR12Ef",
+                                                    "note": ""
+                                                }
+                                            }
+                                        }
+                                    ],
+                                    "item": {
+                                        "layer": {
+                                            "headline": "Stufen",
+                                            "markForExport": false,
+                                            "name": "Stufen",
+                                            "nameUnique": "2PU1wsoDT34xm02GQSRNKs",
+                                            "note": ""
+                                        }
+                                    }
+                                },
+                                {
+                                    "children": [
+                                        {
+                                            "item": {
+                                                "layer": {
+                                                    "headline": "Setzstufe 1",
+                                                    "markForExport": false,
+                                                    "name": "Setzstufe 1",
+                                                    "nameUnique": "18Z6N3eATBY9YHcB_okqRM",
+                                                    "note": ""
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "item": {
+                                                "layer": {
+                                                    "headline": "Setzstufe 2",
+                                                    "markForExport": false,
+                                                    "name": "Setzstufe 2",
+                                                    "nameUnique": "3W5HeGILf5k80mcdkuNukl",
+                                                    "note": ""
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "item": {
+                                                "layer": {
+                                                    "headline": "Setzstufe 3",
+                                                    "markForExport": false,
+                                                    "name": "Setzstufe 3",
+                                                    "nameUnique": "0hOC_Uxef8ERxaZLqHiGHa",
+                                                    "note": ""
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "item": {
+                                                "layer": {
+                                                    "headline": "Setzstufe 4",
+                                                    "markForExport": false,
+                                                    "name": "Setzstufe 4",
+                                                    "nameUnique": "08gZf7fDv3wQI5p3E4TCAs",
+                                                    "note": ""
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "item": {
+                                                "layer": {
+                                                    "headline": "Setzstufe 5",
+                                                    "markForExport": false,
+                                                    "name": "Setzstufe 5",
+                                                    "nameUnique": "16uYRAq6H6mAz2i_5ksL$R",
+                                                    "note": ""
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "item": {
+                                                "layer": {
+                                                    "headline": "Setzstufe 6",
+                                                    "markForExport": false,
+                                                    "name": "Setzstufe 6",
+                                                    "nameUnique": "2F4EcP7Eb7iPD4Lk7U81ug",
+                                                    "note": ""
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "item": {
+                                                "layer": {
+                                                    "headline": "Setzstufe 7",
+                                                    "markForExport": false,
+                                                    "name": "Setzstufe 7",
+                                                    "nameUnique": "2TnY_tgnn9QhgC6c8pJv9F",
+                                                    "note": ""
+                                                }
+                                            }
+                                        }
+                                    ],
+                                    "item": {
+                                        "layer": {
+                                            "headline": "Setzstufen",
+                                            "markForExport": false,
+                                            "name": "Setzstufen",
+                                            "nameUnique": "3Yq1$C$$X0ABfj6BSC$lno",
+                                            "note": ""
+                                        }
+                                    }
+                                },
+                                {
+                                    "children": [
+                                        {
+                                            "item": {
+                                                "layer": {
+                                                    "headline": "Hinterkante 1",
+                                                    "markForExport": false,
+                                                    "name": "Hinterkante 1",
+                                                    "nameUnique": "3GeXFKzo1Aae8FkK2DMlO$",
+                                                    "note": ""
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "item": {
+                                                "layer": {
+                                                    "headline": "Hinterkante 2",
+                                                    "markForExport": false,
+                                                    "name": "Hinterkante 2",
+                                                    "nameUnique": "3i_XTTWkn2_9ZRuFFSYv0J",
+                                                    "note": ""
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "item": {
+                                                "layer": {
+                                                    "headline": "Hinterkante 3",
+                                                    "markForExport": false,
+                                                    "name": "Hinterkante 3",
+                                                    "nameUnique": "3N2JDH1214WA5EWz7fBO_6",
+                                                    "note": ""
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "item": {
+                                                "layer": {
+                                                    "headline": "Hinterkante 4",
+                                                    "markForExport": false,
+                                                    "name": "Hinterkante 4",
+                                                    "nameUnique": "0P5Ql8PVDA6RXaD4ca3Qdn",
+                                                    "note": ""
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "item": {
+                                                "layer": {
+                                                    "headline": "Hinterkante 5",
+                                                    "markForExport": false,
+                                                    "name": "Hinterkante 5",
+                                                    "nameUnique": "1fodGnLR5B$eqOElRjzLJ_",
+                                                    "note": ""
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "item": {
+                                                "layer": {
+                                                    "headline": "Hinterkante 6",
+                                                    "markForExport": false,
+                                                    "name": "Hinterkante 6",
+                                                    "nameUnique": "2iDE4fJTvC2REtQO4z71eE",
+                                                    "note": ""
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "item": {
+                                                "layer": {
+                                                    "headline": "Hinterkante 7",
+                                                    "markForExport": false,
+                                                    "name": "Hinterkante 7",
+                                                    "nameUnique": "06n3w9s2TAGATPZujwc$uI",
+                                                    "note": ""
+                                                }
+                                            }
+                                        }
+                                    ],
+                                    "item": {
+                                        "layer": {
+                                            "headline": "Hinterkanten",
+                                            "markForExport": false,
+                                            "name": "Hinterkanten",
+                                            "nameUnique": "2D1tBjGlzECQ$3RbK$3Czb",
+                                            "note": ""
+                                        }
+                                    }
+                                },
+                                {
+                                    "item": {
+                                        "layer": {
+                                            "headline": "2D-Treppe",
+                                            "markForExport": false,
+                                            "name": "2D-Treppe",
+                                            "nameUnique": "3NTK313lnB1wGmT$2iTyGF",
+                                            "note": ""
+                                        }
+                                    }
+                                },
+                                {
+                                    "item": {
+                                        "layer": {
+                                            "headline": "Stufenverlauf aussen",
+                                            "markForExport": false,
+                                            "name": "Stufenverlauf aussen",
+                                            "nameUnique": "20zgOoiUnBs99hI0UopyE8",
+                                            "note": ""
+                                        }
+                                    }
+                                },
+                                {
+                                    "item": {
+                                        "layer": {
+                                            "headline": "Stufenverlauf innen",
+                                            "markForExport": false,
+                                            "name": "Stufenverlauf innen",
+                                            "nameUnique": "0AosuozQH2Hw_2O6kVxwmU",
+                                            "note": ""
+                                        }
+                                    }
+                                }
+                            ],
+                            "item": {
+                                "layer": {
+                                    "headline": "3D-Treppe",
+                                    "markForExport": false,
+                                    "name": "3D-Treppe",
+                                    "nameUnique": "3HdLn9tLX3POkCdOgDQn03",
+                                    "note": ""
+                                }
+                            }
+                        }
+                    ],
+                    "item": {
+                        "layer": {
+                            "headline": "EG-OG",
+                            "markForExport": false,
+                            "name": "EG-OG",
+                            "nameUnique": "1rp3oqi0vB9AVVN7qgV7ks",
+                            "note": ""
+                        }
+                    }
+                },
+                {
+                    "children": [
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Ortbetonkern",
+                                    "markForExport": false,
+                                    "name": "Ortbetonkern",
+                                    "nameUnique": "3ULyX0qyH1QAmQcazNfmfS",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "item": {
+                                "layer": {
+                                    "headline": "Stufenhöhen",
+                                    "markForExport": false,
+                                    "name": "Stufenhöhen",
+                                    "nameUnique": "02yX_9TiD7AhwuLF2b889f",
+                                    "note": ""
+                                }
+                            }
+                        },
+                        {
+                            "children": [
+                                {
+                                    "children": [
+                                        {
+                                            "item": {
+                                                "layer": {
+                                                    "headline": "Stufe 1",
+                                                    "markForExport": false,
+                                                    "name": "Stufe 1",
+                                                    "nameUnique": "3nrHUttzn1DxNjpfdbcfLp",
+                                                    "note": ""
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "item": {
+                                                "layer": {
+                                                    "headline": "Stufe 2",
+                                                    "markForExport": false,
+                                                    "name": "Stufe 2",
+                                                    "nameUnique": "2f80ueEEv4EQi$nTgb0kgp",
+                                                    "note": ""
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "item": {
+                                                "layer": {
+                                                    "headline": "Stufe 3",
+                                                    "markForExport": false,
+                                                    "name": "Stufe 3",
+                                                    "nameUnique": "0FTcpiI_93GwD2QgNao0E_",
+                                                    "note": ""
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "item": {
+                                                "layer": {
+                                                    "headline": "Stufe 4",
+                                                    "markForExport": false,
+                                                    "name": "Stufe 4",
+                                                    "nameUnique": "3rSWtyWfL6WeoA2TzIgCWD",
+                                                    "note": ""
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "item": {
+                                                "layer": {
+                                                    "headline": "Stufe 5",
+                                                    "markForExport": false,
+                                                    "name": "Stufe 5",
+                                                    "nameUnique": "2gj6EPpDfAMwAFmxJiEJi7",
+                                                    "note": ""
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "item": {
+                                                "layer": {
+                                                    "headline": "Stufe 6",
+                                                    "markForExport": false,
+                                                    "name": "Stufe 6",
+                                                    "nameUnique": "0YB94LA9TEx9RzSrjUXjAv",
+                                                    "note": ""
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "item": {
+                                                "layer": {
+                                                    "headline": "Stufe 7",
+                                                    "markForExport": false,
+                                                    "name": "Stufe 7",
+                                                    "nameUnique": "1Vf_Z96pzD4uh$4lqMLdD1",
+                                                    "note": ""
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "item": {
+                                                "layer": {
+                                                    "headline": "Stufe 8",
+                                                    "markForExport": false,
+                                                    "name": "Stufe 8",
+                                                    "nameUnique": "1uLwU63gfE$8bqQKlrZhPh",
+                                                    "note": ""
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "item": {
+                                                "layer": {
+                                                    "headline": "Stufe 9",
+                                                    "markForExport": false,
+                                                    "name": "Stufe 9",
+                                                    "nameUnique": "16nCV$eKnDjv3pR53m2sfy",
+                                                    "note": ""
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "item": {
+                                                "layer": {
+                                                    "headline": "Stufe 10",
+                                                    "markForExport": false,
+                                                    "name": "Stufe 10",
+                                                    "nameUnique": "2aXKZBQNT2v9blgmAlFr1o",
+                                                    "note": ""
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "item": {
+                                                "layer": {
+                                                    "headline": "Stufe 11",
+                                                    "markForExport": false,
+                                                    "name": "Stufe 11",
+                                                    "nameUnique": "2xbd9cZXjDKgez9kMdT9ZJ",
+                                                    "note": ""
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "item": {
+                                                "layer": {
+                                                    "headline": "Stufe 12",
+                                                    "markForExport": false,
+                                                    "name": "Stufe 12",
+                                                    "nameUnique": "1Er3yRScXEKQHA5hg6iJLz",
+                                                    "note": ""
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "item": {
+                                                "layer": {
+                                                    "headline": "Stufe 13",
+                                                    "markForExport": false,
+                                                    "name": "Stufe 13",
+                                                    "nameUnique": "2Z$$FWg$XDMR11m9NsDroE",
+                                                    "note": ""
+                                                }
+                                            }
+                                        }
+                                    ],
+                                    "item": {
+                                        "layer": {
+                                            "headline": "Stufen",
+                                            "markForExport": false,
+                                            "name": "Stufen",
+                                            "nameUnique": "1$pJexw9fDu85jPpj_dwpv",
+                                            "note": ""
+                                        }
+                                    }
+                                },
+                                {
+                                    "children": [
+                                        {
+                                            "item": {
+                                                "layer": {
+                                                    "headline": "Setzstufe 1",
+                                                    "markForExport": false,
+                                                    "name": "Setzstufe 1",
+                                                    "nameUnique": "0BBeDOXy17$gnXvARzcLN7",
+                                                    "note": ""
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "item": {
+                                                "layer": {
+                                                    "headline": "Setzstufe 2",
+                                                    "markForExport": false,
+                                                    "name": "Setzstufe 2",
+                                                    "nameUnique": "1VbJCOW7H51hxd9lJ_EClI",
+                                                    "note": ""
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "item": {
+                                                "layer": {
+                                                    "headline": "Setzstufe 3",
+                                                    "markForExport": false,
+                                                    "name": "Setzstufe 3",
+                                                    "nameUnique": "3RgoKwiyP4JeuHbj9GTQEd",
+                                                    "note": ""
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "item": {
+                                                "layer": {
+                                                    "headline": "Setzstufe 4",
+                                                    "markForExport": false,
+                                                    "name": "Setzstufe 4",
+                                                    "nameUnique": "0MfL8T4Cj3efVWjtM_45UF",
+                                                    "note": ""
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "item": {
+                                                "layer": {
+                                                    "headline": "Setzstufe 5",
+                                                    "markForExport": false,
+                                                    "name": "Setzstufe 5",
+                                                    "nameUnique": "2lZRw2LQ50agRFcQoAMtBO",
+                                                    "note": ""
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "item": {
+                                                "layer": {
+                                                    "headline": "Setzstufe 6",
+                                                    "markForExport": false,
+                                                    "name": "Setzstufe 6",
+                                                    "nameUnique": "3dIao1UlPCwAKlLUX60IEx",
+                                                    "note": ""
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "item": {
+                                                "layer": {
+                                                    "headline": "Setzstufe 7",
+                                                    "markForExport": false,
+                                                    "name": "Setzstufe 7",
+                                                    "nameUnique": "3t02OfCvDC8Q58Vj$htSuf",
+                                                    "note": ""
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "item": {
+                                                "layer": {
+                                                    "headline": "Setzstufe 8",
+                                                    "markForExport": false,
+                                                    "name": "Setzstufe 8",
+                                                    "nameUnique": "3Gz7rVGgz05PFwXx8Tn4I$",
+                                                    "note": ""
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "item": {
+                                                "layer": {
+                                                    "headline": "Setzstufe 9",
+                                                    "markForExport": false,
+                                                    "name": "Setzstufe 9",
+                                                    "nameUnique": "0hvjw9RObBpv8PTPEjzXRK",
+                                                    "note": ""
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "item": {
+                                                "layer": {
+                                                    "headline": "Setzstufe 10",
+                                                    "markForExport": false,
+                                                    "name": "Setzstufe 10",
+                                                    "nameUnique": "2M2UFTOuLCtQkzH$BmKFY8",
+                                                    "note": ""
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "item": {
+                                                "layer": {
+                                                    "headline": "Setzstufe 11",
+                                                    "markForExport": false,
+                                                    "name": "Setzstufe 11",
+                                                    "nameUnique": "363i30iW171Byb0ULphit2",
+                                                    "note": ""
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "item": {
+                                                "layer": {
+                                                    "headline": "Setzstufe 12",
+                                                    "markForExport": false,
+                                                    "name": "Setzstufe 12",
+                                                    "nameUnique": "3LQcz8jUv7JxhqdhQ99I3v",
+                                                    "note": ""
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "item": {
+                                                "layer": {
+                                                    "headline": "Setzstufe 13",
+                                                    "markForExport": false,
+                                                    "name": "Setzstufe 13",
+                                                    "nameUnique": "09cB3kEgT53PkX5JKMXq$B",
+                                                    "note": ""
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "item": {
+                                                "layer": {
+                                                    "headline": "Setzstufe 14",
+                                                    "markForExport": false,
+                                                    "name": "Setzstufe 14",
+                                                    "nameUnique": "3n0IQRVnD95hk1oyXdWEkH",
+                                                    "note": ""
+                                                }
+                                            }
+                                        }
+                                    ],
+                                    "item": {
+                                        "layer": {
+                                            "headline": "Setzstufen",
+                                            "markForExport": false,
+                                            "name": "Setzstufen",
+                                            "nameUnique": "1TZ8MifSzCJOlf1WXeFv_o",
+                                            "note": ""
+                                        }
+                                    }
+                                },
+                                {
+                                    "children": [
+                                        {
+                                            "item": {
+                                                "layer": {
+                                                    "headline": "Hinterkante 1",
+                                                    "markForExport": false,
+                                                    "name": "Hinterkante 1",
+                                                    "nameUnique": "1fGpVEeurDtelDHQyPWJGJ",
+                                                    "note": ""
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "item": {
+                                                "layer": {
+                                                    "headline": "Hinterkante 2",
+                                                    "markForExport": false,
+                                                    "name": "Hinterkante 2",
+                                                    "nameUnique": "08Dp2__4v7fhbe8jNqZ58x",
+                                                    "note": ""
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "item": {
+                                                "layer": {
+                                                    "headline": "Hinterkante 3",
+                                                    "markForExport": false,
+                                                    "name": "Hinterkante 3",
+                                                    "nameUnique": "2RMsu6aWD8TuPyNA$DcJFE",
+                                                    "note": ""
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "item": {
+                                                "layer": {
+                                                    "headline": "Hinterkante 4",
+                                                    "markForExport": false,
+                                                    "name": "Hinterkante 4",
+                                                    "nameUnique": "28LBCdY$L3JR1_9aUCeP6X",
+                                                    "note": ""
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "item": {
+                                                "layer": {
+                                                    "headline": "Hinterkante 5",
+                                                    "markForExport": false,
+                                                    "name": "Hinterkante 5",
+                                                    "nameUnique": "3___Ruutf9t9i4MP85TxnJ",
+                                                    "note": ""
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "item": {
+                                                "layer": {
+                                                    "headline": "Hinterkante 6",
+                                                    "markForExport": false,
+                                                    "name": "Hinterkante 6",
+                                                    "nameUnique": "2PP7ZcXzfDFOjdVVWScFbu",
+                                                    "note": ""
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "item": {
+                                                "layer": {
+                                                    "headline": "Hinterkante 7",
+                                                    "markForExport": false,
+                                                    "name": "Hinterkante 7",
+                                                    "nameUnique": "0zqo0De9j4WPtREVOLO9yo",
+                                                    "note": ""
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "item": {
+                                                "layer": {
+                                                    "headline": "Hinterkante 8",
+                                                    "markForExport": false,
+                                                    "name": "Hinterkante 8",
+                                                    "nameUnique": "1JicWMvBTCj9FxCgTrlFAH",
+                                                    "note": ""
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "item": {
+                                                "layer": {
+                                                    "headline": "Hinterkante 9",
+                                                    "markForExport": false,
+                                                    "name": "Hinterkante 9",
+                                                    "nameUnique": "0I0mBgT7fFMumOtFCe_RZm",
+                                                    "note": ""
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "item": {
+                                                "layer": {
+                                                    "headline": "Hinterkante 10",
+                                                    "markForExport": false,
+                                                    "name": "Hinterkante 10",
+                                                    "nameUnique": "3FuOZz36TEtv1SHBNgnQpQ",
+                                                    "note": ""
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "item": {
+                                                "layer": {
+                                                    "headline": "Hinterkante 11",
+                                                    "markForExport": false,
+                                                    "name": "Hinterkante 11",
+                                                    "nameUnique": "3vMlYCKk91Ge9NX9zaNezV",
+                                                    "note": ""
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "item": {
+                                                "layer": {
+                                                    "headline": "Hinterkante 12",
+                                                    "markForExport": false,
+                                                    "name": "Hinterkante 12",
+                                                    "nameUnique": "16IstLiFr5ZhLFfIqozT4g",
+                                                    "note": ""
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "item": {
+                                                "layer": {
+                                                    "headline": "Hinterkante 13",
+                                                    "markForExport": false,
+                                                    "name": "Hinterkante 13",
+                                                    "nameUnique": "2GeaNSdXz3wwblQk7DV2nF",
+                                                    "note": ""
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "item": {
+                                                "layer": {
+                                                    "headline": "Hinterkante 14",
+                                                    "markForExport": false,
+                                                    "name": "Hinterkante 14",
+                                                    "nameUnique": "06rJWOX4r1BR0qpxAvzUFp",
+                                                    "note": ""
+                                                }
+                                            }
+                                        }
+                                    ],
+                                    "item": {
+                                        "layer": {
+                                            "headline": "Hinterkanten",
+                                            "markForExport": false,
+                                            "name": "Hinterkanten",
+                                            "nameUnique": "3UKXmWgDT2081OJqorFgZp",
+                                            "note": ""
+                                        }
+                                    }
+                                },
+                                {
+                                    "item": {
+                                        "layer": {
+                                            "headline": "2D-Treppe",
+                                            "markForExport": false,
+                                            "name": "2D-Treppe",
+                                            "nameUnique": "3HwXYh1H91RwEDyqsrp3QD",
+                                            "note": ""
+                                        }
+                                    }
+                                },
+                                {
+                                    "item": {
+                                        "layer": {
+                                            "headline": "Stufenverlauf aussen",
+                                            "markForExport": false,
+                                            "name": "Stufenverlauf aussen",
+                                            "nameUnique": "01Yf6tjy51bASrIDX0cJfg",
+                                            "note": ""
+                                        }
+                                    }
+                                },
+                                {
+                                    "item": {
+                                        "layer": {
+                                            "headline": "Stufenverlauf innen",
+                                            "markForExport": false,
+                                            "name": "Stufenverlauf innen",
+                                            "nameUnique": "1UjABUr65EDBWVioiJyniD",
+                                            "note": ""
+                                        }
+                                    }
+                                }
+                            ],
+                            "item": {
+                                "layer": {
+                                    "headline": "3D-Treppe",
+                                    "markForExport": false,
+                                    "name": "3D-Treppe",
+                                    "nameUnique": "3cW7e0h6z2lBTBSsKixF1k",
+                                    "note": ""
+                                }
+                            }
+                        }
+                    ],
+                    "item": {
+                        "layer": {
+                            "headline": "OG-DG",
+                            "markForExport": false,
+                            "name": "OG-DG",
+                            "nameUnique": "32Or4JizfAhQPcm6z9JnDC",
+                            "note": ""
+                        }
+                    }
+                }
+            ],
+            "item": {
+                "layer": {
+                    "headline": "Treppenanlage",
+                    "markForExport": false,
+                    "name": "Treppenanlage",
+                    "nameUnique": "18HDE_lsjDnve5mxlE1HrY",
+                    "note": ""
+                }
+            }
+        },
+        {
+            "children": [
+                {
+                    "item": {
+                        "layer": {
+                            "headline": "EGDach",
+                            "markForExport": false,
+                            "name": "EGDach",
+                            "nameUnique": "1$4JaXqoH7V9c4zzoCgufu",
+                            "note": ""
+                        }
+                    }
+                },
+                {
+                    "item": {
+                        "layer": {
+                            "headline": "EGDachSchräg",
+                            "markForExport": false,
+                            "name": "EGDachSchräg",
+                            "nameUnique": "1kfxowpqv06OAVnZeRulOg",
+                            "note": ""
+                        }
+                    }
+                },
+                {
+                    "item": {
+                        "layer": {
+                            "headline": "EGEinganDach",
+                            "markForExport": false,
+                            "name": "EGEinganDach",
+                            "nameUnique": "3f1AqrOATCMAcVltYlX5L9",
+                            "note": ""
+                        }
+                    }
+                }
+            ],
+            "item": {
+                "layer": {
+                    "headline": "Dachfläche",
+                    "markForExport": false,
+                    "name": "Dachfläche",
+                    "nameUnique": "3AhRJfOdH4pgdfeE8XiXsH",
+                    "note": ""
                 }
             }
         }
@@ -541,7 +2991,8 @@
             "headline": "Siedlungsweg",
             "markForExport": false,
             "name": "Siedlungsweg",
-            "note": "","nameUnique": "fc6e9255"
+            "nameUnique": "1",
+            "note": ""
         }
     }
 }

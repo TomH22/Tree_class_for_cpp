@@ -14,6 +14,13 @@ set(CMAKE_INSTALL_PREFIX "C:/Program Files/${PROJECT_NAME}" CACHE PATH "CMAKE_IN
 enable_testing()
 
 add_definitions(-DCMAKE_BINARY_DIR="${CMAKE_BINARY_DIR}")
+
+if(MSVC)
+    add_compile_options(/ZI)
+    set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} /INCREMENTAL")
+endif()
+
+
 add_library(lib INTERFACE)
 
 target_include_directories(lib INTERFACE ${CMAKE_CURRENT_SOURCE_DIR}/lib)

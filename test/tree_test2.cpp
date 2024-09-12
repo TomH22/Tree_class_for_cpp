@@ -16,7 +16,7 @@ class TreeTestSuite2 : public ::testing::Test {
 		 std::string test_data_path = CMAKE_BINARY_DIR "/test_data/";
 
 		 {
-			 std::ifstream file(test_data_path + "sw.json");
+			 std::ifstream file(test_data_path + "sw.unique.json");
 
 			 json j;
 			 file >> j;
@@ -25,19 +25,19 @@ class TreeTestSuite2 : public ::testing::Test {
 			 m_TreeModel = treeModel;
 		 }
 
-		 {
-			 std::ifstream file(test_data_path + "sw.unique.json");
+		 //{
+			// std::ifstream file(test_data_path + "sw.unique.json");
 
-			 json j;
-			 file >> j;
+			// json j;
+			// file >> j;
 
-			 henn::TreeModel<Layer> treeModel(j);
-			 m_TreeModelUnique = treeModel;
-		 }
+			// henn::TreeModel<Layer> treeModel(j);
+			// m_TreeModelUnique = treeModel;
+		 //}
 	 }
 protected:
 	henn::TreeModel<Layer> m_TreeModel;
-	henn::TreeModel<Layer> m_TreeModelUnique;
+	//henn::TreeModel<Layer> m_TreeModelUnique;
 };
 
 
@@ -46,13 +46,13 @@ protected:
 Add one element to the tree and test its value.
 */
 TEST_F(TreeTestSuite2, ReadTestData) {
-	EXPECT_EQ(280, m_TreeModel.Size());
+	EXPECT_EQ(266, m_TreeModel.Size());
 }
 
 TEST_F(TreeTestSuite2, AddTestSizeLeaveNodes)
 {
 	auto ln = m_TreeModel.SizeLeaveNodes();
-	EXPECT_EQ(249, m_TreeModel.SizeLeaveNodes());
+	EXPECT_EQ(230, m_TreeModel.SizeLeaveNodes());
 }
 
 TEST_F(TreeTestSuite2, TestGet1)
@@ -90,7 +90,7 @@ TEST_F(TreeTestSuite2, TestTopDownIterator)
 	{
 		counter++;
 	}
-	EXPECT_EQ(280, counter);
+	EXPECT_EQ(266, counter);
 }
 
 TEST_F(TreeTestSuite2, TestStaffIteratorTopItem)
@@ -143,20 +143,28 @@ TEST_F(TreeTestSuite2, TestGetFromStructure)
 {
 	Layer l1;
 	l1.name = "Siedlungsweg";
+	l1.nameUnique = "1";
 	Layer l2;
 	l2.name = "Treppenanlage";
+	l2.nameUnique = "18HDE_lsjDnve5mxlE1HrY";
 	Layer l3;
 	l3.name = "EG-OG";
+	l3.nameUnique = "1rp3oqi0vB9AVVN7qgV7ks";
 	Layer l4;
 	l4.name = "Ortbetontkern";
+	l4.nameUnique = "1cCdXTG5j7e9vxRDmBhN3a";
 	Layer l5;
 	l5.name = "KG";
+	l5.nameUnique = "1Mdo70w4f5nuiyKunWpKwc";
 	Layer l6;
 	l6.name = "Flur";
+	l6.nameUnique = "2j9rw6QEz4qwOFA71fsPP4";
 	Layer l7;
 	l7.name = "EG";
+	l7.nameUnique = "3Zbji619z74PSwzRSx1AOB";
 	Layer l8;
 	l8.name = "Grundriss";
+	l8.nameUnique = "1lo5Iyn8r1OwY0G4Y6WSPu";
 
 	std::vector structure1{ l1, l2, l3, l4 };
 	auto& ortbetontkern = m_TreeModel.Get(structure1);
@@ -167,6 +175,8 @@ TEST_F(TreeTestSuite2, TestGetFromStructure)
 	EXPECT_EQ(*grundriss1, l8);
 	EXPECT_EQ(grundriss1->note, "Dieser Grundriss ist speziell!");
 
+	l6.nameUnique = "1dVWiUg1n5Nv4GHzMi$1SX";
+	l8.nameUnique = "2LDm5vxg5EBgEqWY0BRYhe";
 	std::vector structure3{ l1, l7, l6, l8 };
 	auto& grundriss2 = m_TreeModel.Get(structure3);
 	EXPECT_EQ(*grundriss2, l8);
@@ -196,20 +206,25 @@ TEST_F(TreeTestSuite2, TestGetFromStructureAndChange)
 {
 	Layer l1;
 	l1.name = "Siedlungsweg";
+	l1.nameUnique = "1";
 	Layer l2;
 	l2.name = "Treppenanlage";
+	l2.nameUnique = "18HDE_lsjDnve5mxlE1HrY";
 	Layer l3;
 	l3.name = "EG-OG";
+	l3.nameUnique = "1rp3oqi0vB9AVVN7qgV7ks";
 	Layer l4;
 	l4.name = "Ortbetontkern";
+	l4.nameUnique = "1cCdXTG5j7e9vxRDmBhN3a";
 	Layer l5;
 	l5.name = "KG";
+	l5.nameUnique = "1Mdo70w4f5nuiyKunWpKwc";
 	Layer l6;
 	l6.name = "Flur";
-	Layer l7;
-	l7.name = "EG";
+	l6.nameUnique = "2j9rw6QEz4qwOFA71fsPP4";
 	Layer l8;
 	l8.name = "Grundriss";
+	l8.nameUnique = "1lo5Iyn8r1OwY0G4Y6WSPu";
 
 	std::vector structure2{ l1, l5, l6, l8 };
 	auto& grundriss1 = m_TreeModel.Get(structure2);
@@ -241,7 +256,7 @@ TEST_F(TreeTestSuite2, TestUpdatePropertyForAllItems)
 		EXPECT_TRUE(i.CurrentItem().markForExport);
 		counter++;
 	}
-	EXPECT_EQ(counter, 280);
+	EXPECT_EQ(counter, 266);
 }
 
 TEST_F(TreeTestSuite2, TestGetPath2)
@@ -252,15 +267,9 @@ TEST_F(TreeTestSuite2, TestGetPath2)
 	EXPECT_EQ(path[3].name, "Decke");
 
 
-	auto path2 = m_TreeModel.GetPath(48);
+	auto path2 = m_TreeModel.GetPath(30);
 
-	EXPECT_EQ(path2[3].name, "Wand 4");
-
-	auto path3 = m_TreeModel.GetPath(50);
-
-	EXPECT_EQ(path3[1].name, "KG");
-	EXPECT_EQ(path3[2].name, "Toilette");
-	EXPECT_EQ(path3[3].name, "Grundriss");
+	EXPECT_EQ(path2[3].name, "Wand 3");
 }
 
 TEST_F(TreeTestSuite2, TestFindItems)
@@ -276,38 +285,37 @@ TEST_F(TreeTestSuite2, TestFindItems)
 
 TEST_F(TreeTestSuite2, TestAddSameTreesInTrees)
 {
-
 	Layer fEG;
 	fEG.name = "Flur";
-	fEG.nameUnique = "ad8f";
+	fEG.nameUnique = "1dVWiUg1n5Nv4GHzMi$1SX";
 	Layer fKG;
 	fKG.name = "Flur";
-	fKG.nameUnique = "3bb20cd9";
+	fKG.nameUnique = "2j9rw6QEz4qwOFA71fsPP4";
 	Layer l1;
 	l1.name = "Siedlungsweg";
-	l1.nameUnique = "fc6e9255";
+	l1.nameUnique = "1";
 	Layer l2;
 	l2.name = "KG";
-	l2.nameUnique = "471d";
+	l2.nameUnique = "1Mdo70w4f5nuiyKunWpKwc";
 	Layer l3;
 	l3.name = "EG";
-	l3.nameUnique = "5158635272ee";
+	l3.nameUnique = "3Zbji619z74PSwzRSx1AOB";
 
 	std::vector structure1{ l1, l2, fKG };
-	auto& flur1 = m_TreeModelUnique.Get(structure1);
+	auto& flur1 = m_TreeModel.Get(structure1);
 
 	std::vector structure2{ l1, l3, fEG };
-	auto& flur2 = m_TreeModelUnique.Get(structure2);
+	auto& flur2 = m_TreeModel.Get(structure2);
 
 	Layer l6;
 	l6.name = "Riss_1";
-	m_TreeModelUnique.Append(l6, *flur2, true);
+	m_TreeModel.Append(l6, *flur2, true);
 	flur2->markForExport = true;
 
 	if(false)
 	{
 		std::string test_data_path = CMAKE_BINARY_DIR "/test_data/";
-		auto j = m_TreeModelUnique.GetJson();
+		auto j = m_TreeModel.GetJson();
 		std::ofstream file(test_data_path + "out.json");
 		file << j;
 	}
@@ -315,7 +323,7 @@ TEST_F(TreeTestSuite2, TestAddSameTreesInTrees)
 	// "Flur" in KG should not be changed.
 	{
 		auto upTreeItem = std::make_unique<TreeModel<Layer>::TreeItem>();
-		auto ret = m_TreeModelUnique.GetCopy(fKG, upTreeItem);
+		auto ret = m_TreeModel.GetCopy(fKG, upTreeItem);
 
 		auto m = std::make_unique<TreeModel<Layer>>(move(upTreeItem));
 		auto i = LayerListIterator(*m);
@@ -334,7 +342,7 @@ TEST_F(TreeTestSuite2, TestAddSameTreesInTrees)
 	// "Flur" in EG should be changed.
 	{
 		auto upTreeItem = std::make_unique<TreeModel<Layer>::TreeItem>();
-		auto ret = m_TreeModelUnique.GetCopy(fEG, upTreeItem);
+		auto ret = m_TreeModel.GetCopy(fEG, upTreeItem);
 
 		auto m = std::make_unique<TreeModel<Layer>>(move(upTreeItem));
 		auto i = LayerListIterator(*m);
@@ -352,8 +360,102 @@ TEST_F(TreeTestSuite2, TestAddSameTreesInTrees)
 				somethingMarkForExport = true;
 			counter++;
 		}
-		EXPECT_EQ(counter, 13);
+		EXPECT_EQ(counter, 10);
 		EXPECT_TRUE(rissFound);
 		EXPECT_TRUE(somethingMarkForExport);
 	}
+}
+
+TEST_F(TreeTestSuite2, TestAddSameTreesInTreesWithoutUniqueName)
+{
+	Layer fEG;
+	fEG.name = "Flur";
+	Layer fKG;
+	fKG.name = "Flur";
+	Layer l1;
+	l1.name = "Siedlungsweg";
+	Layer l2;
+	l2.name = "KG";
+	Layer l3;
+	l3.name = "EG";
+
+	std::vector structure1{ l1, l2, fKG };
+	auto& flur1 = m_TreeModel.Get(structure1);
+
+	std::vector structure2{ l1, l3, fEG };
+	auto& flur2 = m_TreeModel.Get(structure2);
+
+	Layer l6;
+	l6.name = "Riss_1";
+	m_TreeModel.Append(l6, *flur2, true);
+	flur2->markForExport = true;
+
+	if (false)
+	{
+		std::string test_data_path = CMAKE_BINARY_DIR "/test_data/";
+		auto j = m_TreeModel.GetJson();
+		std::ofstream file(test_data_path + "out.json");
+		file << j;
+	}
+
+	// "Flur" in KG should not be changed.
+	{
+		auto upTreeItem = std::make_unique<TreeModel<Layer>::TreeItem>();
+		fKG.nameUnique = "2j9rw6QEz4qwOFA71fsPP4";// here, I need the concrete "KG/Flur"
+		auto ret = m_TreeModel.GetCopy(fKG, upTreeItem);
+
+		auto m = std::make_unique<TreeModel<Layer>>(move(upTreeItem));
+		auto i = LayerListIterator(*m);
+		int counter = 0;
+		for (i.First(); !i.IsDone(); i.Next())
+		{
+			auto iLayer = i.CurrentItem();
+
+			EXPECT_NE(iLayer.name, "Riss_1");
+			EXPECT_FALSE(iLayer.markForExport);
+			counter++;
+		}
+		EXPECT_EQ(counter, 12);
+	}
+
+	// "Flur" in EG should be changed.
+	{
+		auto upTreeItem = std::make_unique<TreeModel<Layer>::TreeItem>();
+		fEG.nameUnique = "1dVWiUg1n5Nv4GHzMi$1SX";
+		auto ret = m_TreeModel.GetCopy(fEG, upTreeItem);
+
+		auto m = std::make_unique<TreeModel<Layer>>(move(upTreeItem));
+		auto i = LayerListIterator(*m);
+		int counter = 0;
+		bool rissFound = false;
+		bool somethingMarkForExport = false;
+		for (i.First(); !i.IsDone(); i.Next())
+		{
+			auto iLayer = i.CurrentItem();
+
+			if (iLayer.name == "Riss_1")
+				rissFound = true;
+
+			if (iLayer.markForExport)
+				somethingMarkForExport = true;
+			counter++;
+		}
+		EXPECT_EQ(counter, 10);
+		EXPECT_TRUE(rissFound);
+		EXPECT_TRUE(somethingMarkForExport);
+	}
+}
+
+TEST_F(TreeTestSuite2, TestNewModelFromTreeItem)
+{
+	Layer l;
+	l.name = "Treppenanlage";
+	l.nameUnique = "18HDE_lsjDnve5mxlE1HrY";
+
+	auto treppenanlageTreeItem = std::make_unique<TreeModel<Layer>::TreeItem>();
+	auto ret = m_TreeModel.GetCopy(l, treppenanlageTreeItem);
+
+	auto treppenanlageTreeModel = std::make_unique<TreeModel<Layer>>(move(treppenanlageTreeItem));
+	auto size = treppenanlageTreeModel->Size();
+	EXPECT_EQ(size, 82);
 }

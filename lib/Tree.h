@@ -110,12 +110,12 @@ public:
 	bool Append(Item _item, Item _parentItem, const bool after = true);
 	Item Get(const size_t);
 
-	bool GetCopy(const Item _item, std::unique_ptr<TreeItem>& ret)
+	bool GetCopy(const Item& _item, std::unique_ptr<TreeItem>& ret)
 	{
 		return getRecursive(m_treeItem, _item, ret);
 	};
 
-	bool getRecursive(std::unique_ptr<TreeItem>& _treeItem, const Item _item, std::unique_ptr<TreeItem>& ret)
+	bool getRecursive(std::unique_ptr<TreeItem>& _treeItem, const Item& _item, std::unique_ptr<TreeItem>& ret)
 	{
 		if (*_treeItem->m_Item == _item)
 		{
